@@ -1,0 +1,66 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>Practica MP2 - Juego Tetris: Fichero Fuente tablero.h</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Generado por Doxygen 1.5.4 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>Página&nbsp;principal</span></a></li>
+    <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+  </ul>
+</div>
+<h1>tablero.h</h1><a href="tablero_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 
+<a name="l00010"></a>00010 <span class="comment">/* ***************************************** */</span>
+<a name="l00011"></a>00011 
+<a name="l00012"></a>00012 <span class="preprocessor">#ifndef __TABLERO__H__</span>
+<a name="l00013"></a>00013 <span class="preprocessor"></span><span class="preprocessor">#define __TABLERO__H__</span>
+<a name="l00014"></a>00014 <span class="preprocessor"></span>
+<a name="l00015"></a>00015 <span class="comment">/* ***************************************** */</span>
+<a name="l00016"></a>00016 
+<a name="l00017"></a>00017 <span class="preprocessor">#include "<a class="code" href="matriz_8h.html" title="Fichero cabecera para la gestión simplificada de las matrices.">matriz.h</a>"</span>
+<a name="l00018"></a>00018 <span class="preprocessor">#include "<a class="code" href="pieza_8h.html" title="Fichero cabecera para la gestión simplificada de las piezas.">pieza.h</a>"</span>
+<a name="l00019"></a>00019 
+<a name="l00020"></a>00020 <span class="keyword">class </span>tablero{
+<a name="l00021"></a>00021   <span class="keyword">private</span>:
+<a name="l00022"></a>00022         matriz m;
+<a name="l00023"></a>00023         
+<a name="l00024"></a>00024   <span class="keyword">public</span>:
+<a name="l00025"></a>00025 
+<a name="l00029"></a>00029 tablero();
+<a name="l00030"></a>00030 
+<a name="l00037"></a>00037 tablero(<span class="keywordtype">int</span> f, <span class="keywordtype">int</span> c);
+<a name="l00038"></a>00038 
+<a name="l00042"></a>00042 ~tablero();
+<a name="l00043"></a>00043 
+<a name="l00049"></a>00049 tablero (<span class="keyword">const</span> tablero &amp;t);
+<a name="l00050"></a>00050 
+<a name="l00056"></a>00056 tablero&amp; operator=(<span class="keyword">const</span> tablero &amp;t);
+<a name="l00057"></a>00057 
+<a name="l00062"></a>00062 <span class="keywordtype">int</span> FilTablero()<span class="keyword">const</span>;
+<a name="l00063"></a>00063 
+<a name="l00068"></a>00068 <span class="keywordtype">int</span> ColTablero()<span class="keyword">const</span>;
+<a name="l00069"></a>00069 
+<a name="l00077"></a>00077 <span class="keywordtype">void</span> SetTablero(<span class="keywordtype">int</span> posi, <span class="keywordtype">int</span> posj, <span class="keyword">const</span> pieza &amp;p);
+<a name="l00078"></a>00078 
+<a name="l00086"></a>00086 <span class="keywordtype">void</span> Set(<span class="keywordtype">int</span> posi, <span class="keywordtype">int</span> posj, <span class="keywordtype">int</span> v);
+<a name="l00087"></a>00087 
+<a name="l00094"></a>00094 <span class="keywordtype">int</span> GetTablero(<span class="keywordtype">int</span> posi, <span class="keywordtype">int</span> posj)<span class="keyword">const</span>;
+<a name="l00095"></a>00095 
+<a name="l00104"></a>00104 <span class="keywordtype">bool</span> Encaja(<span class="keywordtype">int</span> posi, <span class="keywordtype">int</span> posj, <span class="keyword">const</span> pieza &amp;p)<span class="keyword">const</span>;
+<a name="l00105"></a>00105 
+<a name="l00110"></a>00110 <span class="keywordtype">int</span> LineaCompleta();
+<a name="l00111"></a>00111 
+<a name="l00115"></a>00115 <span class="keywordtype">int</span> BorrarLinea();
+<a name="l00116"></a>00116 
+<a name="l00120"></a>00120 <span class="keywordtype">void</span> EscribirTablero()<span class="keyword">const</span>;
+<a name="l00121"></a>00121 
+<a name="l00125"></a>00125 <span class="keywordtype">void</span> LeerTablero();
+<a name="l00126"></a>00126 };
+<a name="l00127"></a>00127 <span class="preprocessor">#endif</span>
+</pre></div><hr size="1"><address style="text-align: right;"><small>Generado el Fri Jun 6 22:51:44 2008 para Practica MP2 - Juego Tetris por&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.4 </small></address>
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>Practica MP2 - Juego Tetris: Fichero Fuente graficos.h</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Generado por Doxygen 1.5.4 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>Página&nbsp;principal</span></a></li>
+    <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+    <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+  </ul>
+</div>
+<h1>graficos.h</h1><a href="graficos_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 
+<a name="l00011"></a>00011 <span class="comment">/* ***************************************** */</span>
+<a name="l00012"></a>00012 
+<a name="l00013"></a>00013 <span class="preprocessor">#ifndef __GRAFICOS__H__</span>
+<a name="l00014"></a>00014 <span class="preprocessor"></span><span class="preprocessor">#define __GRAFICOS__H__</span>
+<a name="l00015"></a>00015 <span class="preprocessor"></span>
+<a name="l00016"></a>00016 <span class="comment">/* ***************************************** */</span>
+<a name="l00017"></a>00017 
+<a name="l00018"></a>00018 <span class="preprocessor">#include &lt;SDL/SDL.h&gt;</span>
+<a name="l00019"></a>00019 <span class="preprocessor">#include &lt;SDL/SDL_gfxPrimitives.h&gt;</span>
+<a name="l00020"></a>00020 <span class="preprocessor">#include &lt;SDL/SDL_ttf.h&gt;</span>
+<a name="l00021"></a>00021 
+<a name="l00022"></a>00022 
+<a name="l00026"></a><a class="code" href="namespacegraficos.html">00026</a> <span class="keyword">namespace </span>graficos {
+<a name="l00027"></a>00027 
+<a name="l00034"></a><a class="code" href="namespacegraficos.html#f6a0a9a254403ffa1cf4f5d3bebe6df8">00034</a> <span class="keyword">typedef</span> SDL_Surface* <a class="code" href="namespacegraficos.html#f6a0a9a254403ffa1cf4f5d3bebe6df8" title="Tipo de dato para almacenar imágenes (Bitmaps).">GRF_Imagen</a>;
+<a name="l00035"></a>00035 
+<a name="l00042"></a><a class="code" href="namespacegraficos.html#db7116f41c46c27d866b964cc3294d9c">00042</a> <span class="keyword">enum</span> <a class="code" href="namespacegraficos.html#db7116f41c46c27d866b964cc3294d9c" title="Tipo de evento recibido.">TEventoEntrada</a> {
+<a name="l00043"></a><a class="code" href="namespacegraficos.html#db7116f41c46c27d866b964cc3294d9ce1aa3e4bc7f4219f7addc060575a60cc">00043</a>       <a class="code" href="namespacegraficos.html#db7116f41c46c27d866b964cc3294d9ce1aa3e4bc7f4219f7addc060575a60cc">GRF_RATON</a>=1,  
+<a name="l00044"></a><a class="code" href="namespacegraficos.html#db7116f41c46c27d866b964cc3294d9cb6b7a29716981dc832adb08bfa5664ec">00044</a>       <a class="code" href="namespacegraficos.html#db7116f41c46c27d866b964cc3294d9cb6b7a29716981dc832adb08bfa5664ec">GRF_TECLADO</a>=2 
+<a name="l00045"></a>00045 };
+<a name="l00046"></a>00046 
+<a name="l00057"></a><a class="code" href="namespacegraficos.html#f5d27a5d622fed301736f447979a478a">00057</a> <span class="keyword">typedef</span> Uint8 <a class="code" href="namespacegraficos.html#f5d27a5d622fed301736f447979a478a" title="Botones del ratón.">TBotonRaton</a>;
+<a name="l00058"></a>00058 
+<a name="l00071"></a><a class="code" href="namespacegraficos.html#d2b5767086758eb222f34274090ead25">00071</a> <span class="keyword">typedef</span> SDLKey <a class="code" href="namespacegraficos.html#d2b5767086758eb222f34274090ead25" title="Teclas.">TTecla</a>;
+<a name="l00072"></a>00072 
+<a name="l00073"></a>00073 
+<a name="l00080"></a><a class="code" href="namespacegraficos.html#1963adaaa9e83367392c7f088b882f62">00080</a> <span class="keyword">typedef</span> TTF_Font* <a class="code" href="namespacegraficos.html#1963adaaa9e83367392c7f088b882f62" title="Tipo de dato para almacenar tipografías.">GRF_Fuente</a>;
+<a name="l00081"></a>00081 
+<a name="l00082"></a>00082 
+<a name="l00093"></a><a class="code" href="namespacegraficos.html#d0d4f572e3a5a937fe33dc55f730dc5c">00093</a> <span class="keyword">typedef</span> <span class="keywordtype">int</span> <a class="code" href="namespacegraficos.html#d0d4f572e3a5a937fe33dc55f730dc5c" title="Estilos de fuentes.">TEstiloFuente</a>;
+<a name="l00094"></a>00094 
+<a name="l00095"></a>00095 
+<a name="l00096"></a>00096 <span class="comment">/* ***************************************** */</span>
+<a name="l00097"></a>00097 <span class="comment">/* ***************************************** */</span>
+<a name="l00098"></a>00098 <span class="comment">/* ***************************************** */</span>
+<a name="l00099"></a>00099 
+<a name="l00100"></a>00100 
+<a name="l00101"></a>00101 
+<a name="l00102"></a>00102 
+<a name="l00110"></a>00110 <span class="keywordtype">void</span> <a class="code" href="namespacegraficos.html#3669f037efe39db9fe6b5f902e5b39d4" title="Inicializar la biblioteca SDL y crear/abrir una ventana.">CrearVentana</a>(<span class="keywordtype">int</span> ancho, <span class="keywordtype">int</span> alto, <span class="keyword">const</span> <span class="keywordtype">char</span> *titulo);
+<a name="l00111"></a>00111 
+<a name="l00117"></a>00117 <span class="keywordtype">int</span> <a class="code" href="namespacegraficos.html#7a963b22997d75295d8bcc51898f0138" title="Alto de la ventana.">AltoVentana</a>();
+<a name="l00118"></a>00118 
+<a name="l00124"></a>00124 <span class="keywordtype">int</span> <a class="code" href="namespacegraficos.html#a611f446416ecb06342a5335d1302846" title="Ancho de la ventana.">AnchoVentana</a>();
+<a name="l00125"></a>00125 
+<a name="l00126"></a>00126 
+<a name="l00131"></a>00131 <span class="keywordtype">void</span> <a class="code" href="namespacegraficos.html#d93236ca6b22116737fa5f923f8fd66d" title="Borra (pone negro) el contenido de la ventana.">LimpiarVentana</a>();
+<a name="l00132"></a>00132 
+<a name="l00141"></a>00141 <span class="keywordtype">void</span> <a class="code" href="namespacegraficos.html#8ff020ac2397675b81378a37b924e776" title="Activa la actualización del dibujo.">ActivarDibujo</a>();
+<a name="l00149"></a>00149 <span class="keywordtype">void</span> <a class="code" href="namespacegraficos.html#28d14b096347a914c79dacf3e1d5e12c" title="Desactiva la actualización del dibujo.">DesactivarDibujo</a>();
+<a name="l00150"></a>00150 
+<a name="l00151"></a>00151 
+<a name="l00152"></a>00152 <span class="comment">//-----------------------------------------------------------------------------</span>
+<a name="l00153"></a>00153 <span class="comment">/* ***************************************** */</span>
+<a name="l00154"></a>00154 <span class="comment">/* *********  Funciones de Imágenes  ******* */</span>
+<a name="l00155"></a>00155 <span class="comment">/* ***************************************** */</span>
+<a name="l00156"></a>00156 <span class="comment">//-----------------------------------------------------------------------------</span>
+<a name="l00157"></a>00157 
+<a name="l00158"></a>00158 
+<a name="l00166"></a>00166 <a class="code" href="namespacegraficos.html#f6a0a9a254403ffa1cf4f5d3bebe6df8" title="Tipo de dato para almacenar imágenes (Bitmaps).">GRF_Imagen</a> <a class="code" href="namespacegraficos.html#3a1627b1e1155a38840a6a23147c8452" title="Crea una imagen (bitmap).">CrearImagen</a>(<span class="keywordtype">int</span> ancho, <span class="keywordtype">int</span> alto);
+<a name="l00167"></a>00167 
+<a name="l00168"></a>00168 
+<a name="l00176"></a>00176 <a class="code" href="namespacegraficos.html#f6a0a9a254403ffa1cf4f5d3bebe6df8" title="Tipo de dato para almacenar imágenes (Bitmaps).">GRF_Imagen</a> <a class="code" href="namespacegraficos.html#c8c10e46984a7f2beb7dc48f8917b3af" title="Crea una copia de una imagen (bitmap).">ObtenerCopiaImagen</a>(<a class="code" href="namespacegraficos.html#f6a0a9a254403ffa1cf4f5d3bebe6df8" title="Tipo de dato para almacenar imágenes (Bitmaps).">GRF_Imagen</a> orig);
+<a name="l00177"></a>00177 
+<a name="l00178"></a>00178 
+<a name="l00185"></a>00185 <span class="keywordtype">int</span> <a class="code" href="namespacegraficos.html#417c9518f7a7417210266bd1fc341605" title="Consulta del alto de la imagen.">AltoImagen</a>(<a class="code" href="namespacegraficos.html#f6a0a9a254403ffa1cf4f5d3bebe6df8" title="Tipo de dato para almacenar imágenes (Bitmaps).">GRF_Imagen</a> img);
+<a name="l00186"></a>00186 
+<a name="l00187"></a>00187 
+<a name="l00193"></a>00193 <span class="keywordtype">int</span> <a class="code" href="namespacegraficos.html#b4e1981141b6caabaff0e8f599877e9e" title="Consulta del ancho de la imagen.">AnchoImagen</a>(<a class="code" href="namespacegraficos.html#f6a0a9a254403ffa1cf4f5d3bebe6df8" title="Tipo de dato para almacenar imágenes (Bitmaps).">GRF_Imagen</a> img);
+<a name="l00194"></a>00194 
+<a name="l00201"></a>00201 <span class="keywordtype">void</span> <a class="code" href="namespacegraficos.html#d59fedb6676a4b07997ce0868dd8123d" title="Limpia el contenido de una imagen.">LimpiarImagen</a>(<a class="code" href="namespacegraficos.html#f6a0a9a254403ffa1cf4f5d3bebe6df8" title="Tipo de dato para almacenar imágenes (Bitmaps).">GRF_Imagen</a> img);
+<a name="l00202"></a>00202 
+<a name="l00203"></a>00203 
+<a name="l00213"></a>00213 <a class="code" href="namespacegraficos.html#f6a0a9a254403ffa1cf4f5d3bebe6df8" title="Tipo de dato para almacenar imágenes (Bitmaps).">GRF_Imagen</a> <a class="code" href="namespacegraficos.html#a2816640dfb360555fba4e88c6eff611" title="Cargar desde un fichero en disco una imagen BMP.">LeerImagen</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *fich);
+<a name="l00214"></a>00214 
+<a name="l00215"></a>00215 
+<a name="l00216"></a>00216 
+<a name="l00223"></a>00223 <span class="keywordtype">bool</span> <a class="code" href="namespacegraficos.html#a0e79ede861c0f0f06c0ae47949c0bc1" title="Salva una imagen a fichero BMP en disco.">GrabarImagen</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *fich, <a class="code" href="namespacegraficos.html#f6a0a9a254403ffa1cf4f5d3bebe6df8" title="Tipo de dato para almacenar imágenes (Bitmaps).">GRF_Imagen</a> img);
+<a name="l00224"></a>00224 
+<a name="l00225"></a>00225 
+<a name="l00232"></a>00232 <span class="keywordtype">void</span> <a class="code" href="namespacegraficos.html#4af4f9885d6b7eac3acffedb91c05bf9" title="Liberar la memoria ocupada por una imagen BMP.">LiberarImagen</a>(<a class="code" href="namespacegraficos.html#f6a0a9a254403ffa1cf4f5d3bebe6df8" title="Tipo de dato para almacenar imágenes (Bitmaps).">GRF_Imagen</a> img);
+<a name="l00233"></a>00233 
+<a name="l00234"></a>00234 
+<a name="l00245"></a>00245 <span class="keywordtype">bool</span> <a class="code" href="namespacegraficos.html#2fe9ebb8f4c202fc734a3ef0c625332a" title="Obtener las dimensiones (filas y columnas) de una imagen que está almacenada en...">DimensionesImagenFichero</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *fich, <span class="keywordtype">int</span>&amp; ancho, <span class="keywordtype">int</span>&amp; alto);
+<a name="l00246"></a>00246 
+<a name="l00247"></a>00247 
+<a name="l00259"></a>00259 <span class="keywordtype">void</span> <a class="code" href="namespacegraficos.html#4891cefa7fc696f1804c0f842be47006" title="Dibuja en la ventana gráfica, a partir de las coordenadas (x, y), la imagen almacenada...">DibujarImagen</a>(<a class="code" href="namespacegraficos.html#f6a0a9a254403ffa1cf4f5d3bebe6df8" title="Tipo de dato para almacenar imágenes (Bitmaps).">GRF_Imagen</a> img, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <a class="code" href="namespacegraficos.html#f6a0a9a254403ffa1cf4f5d3bebe6df8" title="Tipo de dato para almacenar imágenes (Bitmaps).">GRF_Imagen</a> imgdest=0);
+<a name="l00260"></a>00260 
+<a name="l00261"></a>00261 
+<a name="l00262"></a>00262 <span class="comment">//-----------------------------------------------------------------------------</span>
+<a name="l00263"></a>00263 <span class="comment">/* ***************************************** */</span>
+<a name="l00264"></a>00264 <span class="comment">/* *********  Funciones de dibujo  ********* */</span>
+<a name="l00265"></a>00265 <span class="comment">/* ***************************************** */</span>
+<a name="l00266"></a>00266 <span class="comment">//-----------------------------------------------------------------------------</span>
+<a name="l00267"></a>00267 
+<a name="l00281"></a>00281 <span class="keywordtype">void</span> <a class="code" href="namespacegraficos.html#eab21e631fba6fbcf7acb421af2e6e27" title="Dibuja un punto de color (r, g, b) en (x, y).">Punto</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> r, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> g, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> b, <a class="code" href="namespacegraficos.html#f6a0a9a254403ffa1cf4f5d3bebe6df8" title="Tipo de dato para almacenar imágenes (Bitmaps).">GRF_Imagen</a> img=0);
+<a name="l00282"></a>00282 
+<a name="l00283"></a>00283 
+<a name="l00298"></a>00298 <span class="keywordtype">void</span> <a class="code" href="namespacegraficos.html#592d0207ff687a259b8f7ea76708a948" title="Dibuja una línea desde (x1,y1) a (x2,y2) de color (r, g, b).">Linea</a>(<span class="keywordtype">int</span> x1, <span class="keywordtype">int</span> y1, <span class="keywordtype">int</span> x2, <span class="keywordtype">int</span> y2, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> r, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> g, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> b, <a class="code" href="namespacegraficos.html#f6a0a9a254403ffa1cf4f5d3bebe6df8" title="Tipo de dato para almacenar imágenes (Bitmaps).">GRF_Imagen</a> img=0);
+<a name="l00299"></a>00299 
+<a name="l00300"></a>00300 
+<a name="l00315"></a>00315 <span class="keywordtype">void</span> <a class="code" href="namespacegraficos.html#1749f151a5f47f36f345f3666e899ff6" title="Dibuja una circunferencia centrada en (x,y) con radio rad de color (r, g, b).">Circulo</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> rad, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> r, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> g, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> b, <a class="code" href="namespacegraficos.html#f6a0a9a254403ffa1cf4f5d3bebe6df8" title="Tipo de dato para almacenar imágenes (Bitmaps).">GRF_Imagen</a> img=0);
+<a name="l00316"></a>00316 
+<a name="l00317"></a>00317 
+<a name="l00333"></a>00333 <span class="keywordtype">void</span> <a class="code" href="namespacegraficos.html#79c8f7495eb7aed9c2efe6a34c0984b9" title="Dibuja un rectángulo definido por las esquinas (x1,y1) a (x2,y2) de color (r, g...">Rectangulo</a>(<span class="keywordtype">int</span> x1, <span class="keywordtype">int</span> y1, <span class="keywordtype">int</span> x2, <span class="keywordtype">int</span> y2, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> r, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> g, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> b, <a class="code" href="namespacegraficos.html#f6a0a9a254403ffa1cf4f5d3bebe6df8" title="Tipo de dato para almacenar imágenes (Bitmaps).">GRF_Imagen</a> img=0);
+<a name="l00334"></a>00334 
+<a name="l00335"></a>00335 
+<a name="l00351"></a>00351 <span class="keywordtype">void</span> <a class="code" href="namespacegraficos.html#11481486f73321ddc80eae26410f1f0d" title="Dibuja una elipse centrada en (x,y) con radios radx y rady de color (r, g, b).">Elipse</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> radx, <span class="keywordtype">int</span> rady, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> r, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> g, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> b, <a class="code" href="namespacegraficos.html#f6a0a9a254403ffa1cf4f5d3bebe6df8" title="Tipo de dato para almacenar imágenes (Bitmaps).">GRF_Imagen</a> img=0);
+<a name="l00352"></a>00352 
+<a name="l00353"></a>00353 
+<a name="l00369"></a>00369 <span class="keywordtype">void</span> <a class="code" href="namespacegraficos.html#e4c20d5aa0fe192fd84338f88c17cdd3" title="Dibuja un rectángulo relleno.">RectanguloR</a>(<span class="keywordtype">int</span> x1, <span class="keywordtype">int</span> y1, <span class="keywordtype">int</span> x2, <span class="keywordtype">int</span> y2, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> r, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> g, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> b, <a class="code" href="namespacegraficos.html#f6a0a9a254403ffa1cf4f5d3bebe6df8" title="Tipo de dato para almacenar imágenes (Bitmaps).">GRF_Imagen</a> img=0);
+<a name="l00370"></a>00370 
+<a name="l00371"></a>00371 
+<a name="l00386"></a>00386 <span class="keywordtype">void</span> <a class="code" href="namespacegraficos.html#6e937d4f03f010ec9ede8199f072ba81" title="Dibuja un círculo relleno.">CirculoR</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> rad, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> r, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> g, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> b, <a class="code" href="namespacegraficos.html#f6a0a9a254403ffa1cf4f5d3bebe6df8" title="Tipo de dato para almacenar imágenes (Bitmaps).">GRF_Imagen</a> img=0);
+<a name="l00387"></a>00387 
+<a name="l00388"></a>00388 
+<a name="l00404"></a>00404 <span class="keywordtype">void</span> <a class="code" href="namespacegraficos.html#87ca448f1e03e4395f29b25993186f3f" title="Dibuja una elipse rellena.">ElipseR</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> radx, <span class="keywordtype">int</span> rady, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> r, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> g, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> b, <a class="code" href="namespacegraficos.html#f6a0a9a254403ffa1cf4f5d3bebe6df8" title="Tipo de dato para almacenar imágenes (Bitmaps).">GRF_Imagen</a> img=0);
+<a name="l00405"></a>00405 
+<a name="l00406"></a>00406 
+<a name="l00422"></a>00422 <span class="keywordtype">void</span> <a class="code" href="namespacegraficos.html#28924d1feab2dcaa2a7e6bf7d2be9fee" title="Escribe un texto en la ventana.">Texto</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keyword">const</span> <span class="keywordtype">char</span> *c,  <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> r, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> g, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> b, <a class="code" href="namespacegraficos.html#f6a0a9a254403ffa1cf4f5d3bebe6df8" title="Tipo de dato para almacenar imágenes (Bitmaps).">GRF_Imagen</a> img=0);
+<a name="l00423"></a>00423 
+<a name="l00424"></a>00424 <span class="comment">//-----------------------------------------------------------------------------</span>
+<a name="l00425"></a>00425 <span class="comment">/* ******************************************* */</span>
+<a name="l00426"></a>00426 <span class="comment">/* *********  Funciones de Consulta  ********* */</span>
+<a name="l00427"></a>00427 <span class="comment">/* ******************************************* */</span>
+<a name="l00428"></a>00428 <span class="comment">//-----------------------------------------------------------------------------</span>
+<a name="l00429"></a>00429 
+<a name="l00430"></a>00430 
+<a name="l00445"></a>00445 <span class="keywordtype">void</span> <a class="code" href="namespacegraficos.html#11186b075a579b0c1b3e6d20a81df352" title="Obtiene el color del pixel de la posición (x, y) en (r, g, b).">ObtenerPunto</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> &amp;r, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> &amp;g, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> &amp;b, <a class="code" href="namespacegraficos.html#f6a0a9a254403ffa1cf4f5d3bebe6df8" title="Tipo de dato para almacenar imágenes (Bitmaps).">GRF_Imagen</a> img=0);
+<a name="l00446"></a>00446 
+<a name="l00447"></a>00447 
+<a name="l00448"></a>00448 
+<a name="l00457"></a>00457 <a class="code" href="namespacegraficos.html#f5d27a5d622fed301736f447979a478a" title="Botones del ratón.">TBotonRaton</a> <a class="code" href="namespacegraficos.html#d4b0e011bc9886553abf0302c21a597e" title="Espera hasta que se pulsa uno de los botones del ratón en la ventana.">ObtenerClick</a>(<span class="keywordtype">int</span> &amp;x, <span class="keywordtype">int</span> &amp;y);
+<a name="l00458"></a>00458 
+<a name="l00459"></a>00459 
+<a name="l00465"></a>00465 <a class="code" href="namespacegraficos.html#d2b5767086758eb222f34274090ead25" title="Teclas.">TTecla</a> <a class="code" href="namespacegraficos.html#083deea03b75db5291211ff3ef0a9753" title="Espera hasta que se pulsa una tecla.">ObtenerTecla</a>();
+<a name="l00466"></a>00466 
+<a name="l00467"></a>00467 
+<a name="l00479"></a>00479 <a class="code" href="namespacegraficos.html#db7116f41c46c27d866b964cc3294d9c" title="Tipo de evento recibido.">TEventoEntrada</a> <a class="code" href="namespacegraficos.html#37aafbbb47acdd6c5afe449df5b76034" title="Espera hasta que se pulsa una tecla o el raton.">ObtenerEntrada</a>(<a class="code" href="namespacegraficos.html#d2b5767086758eb222f34274090ead25" title="Teclas.">TTecla</a> &amp;pulsa, <a class="code" href="namespacegraficos.html#f5d27a5d622fed301736f447979a478a" title="Botones del ratón.">TBotonRaton</a>&amp; boton, <span class="keywordtype">int</span> &amp;x, <span class="keywordtype">int</span> &amp;y);
+<a name="l00480"></a>00480 
+<a name="l00488"></a>00488 <a class="code" href="namespacegraficos.html#d2b5767086758eb222f34274090ead25" title="Teclas.">TTecla</a> <a class="code" href="namespacegraficos.html#5814c3461925a6c16097ade7f6a5d808" title="Consulta, y si hay una tecla pulsada, devuelve su código.">QueTeclaHayPulsada</a>();
+<a name="l00489"></a>00489 
+<a name="l00490"></a>00490 
+<a name="l00491"></a>00491 <span class="comment">//-----------------------------------------------------------------------------</span>
+<a name="l00492"></a>00492 <span class="comment">/* ******************************************* */</span>
+<a name="l00493"></a>00493 <span class="comment">/* *********  Funciones de Tiempo  *********** */</span>
+<a name="l00494"></a>00494 <span class="comment">/* ******************************************* */</span>
+<a name="l00495"></a>00495 <span class="comment">//-----------------------------------------------------------------------------</span>
+<a name="l00496"></a>00496 
+<a name="l00497"></a>00497 
+<a name="l00502"></a>00502 <span class="keywordtype">void</span> <a class="code" href="namespacegraficos.html#c380f2bc297ae9575e43d9db8f541240" title="Espera durante un instante de tiempo.">Esperar</a>(<span class="keywordtype">int</span> ms);
+<a name="l00503"></a>00503 
+<a name="l00504"></a>00504 
+<a name="l00509"></a>00509 <span class="keywordtype">void</span> <a class="code" href="namespacegraficos.html#7520c1b2af66f5a6e346fd2e03484c5c" title="Pone el cronómetro a cero.">CronometroInicio</a>();
+<a name="l00510"></a>00510 
+<a name="l00516"></a>00516 <span class="keywordtype">long</span> <span class="keywordtype">int</span> <a class="code" href="namespacegraficos.html#51bed3e40cd001282fa868d60b6bc6cc" title="Valor del cronómetro.">CronometroValor</a>();
+<a name="l00517"></a>00517 
+<a name="l00518"></a>00518 <span class="comment">//-----------------------------------------------------------------------------</span>
+<a name="l00519"></a>00519 <span class="comment">/* ********************************************** */</span>
+<a name="l00520"></a>00520 <span class="comment">/* *********  Gestión de Fuentes TTF  *********** */</span>
+<a name="l00521"></a>00521 <span class="comment">/* ********************************************** */</span>
+<a name="l00522"></a>00522 <span class="comment">//-----------------------------------------------------------------------------</span>
+<a name="l00523"></a>00523 
+<a name="l00532"></a>00532 <a class="code" href="namespacegraficos.html#1963adaaa9e83367392c7f088b882f62" title="Tipo de dato para almacenar tipografías.">GRF_Fuente</a> <a class="code" href="namespacegraficos.html#1ffa48dbe17c0cc18a12bc5a3615c550" title="Carga una fuente ttf.">CargarFuente</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *fichero, <span class="keywordtype">int</span> tamano, <a class="code" href="namespacegraficos.html#d0d4f572e3a5a937fe33dc55f730dc5c" title="Estilos de fuentes.">TEstiloFuente</a> estilo=TTF_STYLE_NORMAL);
+<a name="l00533"></a>00533 
+<a name="l00534"></a>00534 
+<a name="l00540"></a>00540 <span class="keywordtype">void</span> <a class="code" href="namespacegraficos.html#fd9f40ebaadfd4b4140b9f760b7476c1" title="Libera una fuente previamente cargada.">LiberarFuente</a>(<a class="code" href="namespacegraficos.html#1963adaaa9e83367392c7f088b882f62" title="Tipo de dato para almacenar tipografías.">GRF_Fuente</a> fuente);
+<a name="l00541"></a>00541 
+<a name="l00557"></a>00557 <span class="keywordtype">void</span> <a class="code" href="namespacegraficos.html#d57eaef769a1c24dd0b8fad145568dba" title="Escribir texto ttf.">EscribirTexto</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keyword">const</span> <span class="keywordtype">char</span> *cadena, <a class="code" href="namespacegraficos.html#1963adaaa9e83367392c7f088b882f62" title="Tipo de dato para almacenar tipografías.">GRF_Fuente</a> fuente,
+<a name="l00558"></a>00558                    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> r, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> g, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> b, <a class="code" href="namespacegraficos.html#f6a0a9a254403ffa1cf4f5d3bebe6df8" title="Tipo de dato para almacenar imágenes (Bitmaps).">GRF_Imagen</a> imgdest=0);
+<a name="l00559"></a>00559 
+<a name="l00560"></a>00560 
+<a name="l00567"></a>00567 <span class="keywordtype">int</span> <a class="code" href="namespacegraficos.html#da8087d51074520435a5f5b6e0847e61" title="Altura de una fuente ttf.">AltoFuente</a>(<a class="code" href="namespacegraficos.html#1963adaaa9e83367392c7f088b882f62" title="Tipo de dato para almacenar tipografías.">GRF_Fuente</a> fuente);
+<a name="l00568"></a>00568 
+<a name="l00577"></a>00577 <span class="keywordtype">void</span> <a class="code" href="namespacegraficos.html#afb08b296aaced9125101ef279a177a6" title="Calcula el tamaño de un texto.">TamanoTexto</a>(<a class="code" href="namespacegraficos.html#1963adaaa9e83367392c7f088b882f62" title="Tipo de dato para almacenar tipografías.">GRF_Fuente</a> fuente, <span class="keyword">const</span> <span class="keywordtype">char</span> *mensaje, <span class="keywordtype">int</span> &amp;ancho, <span class="keywordtype">int</span> &amp;alto);
+<a name="l00578"></a>00578 
+<a name="l00579"></a>00579 
+<a name="l00580"></a>00580 };
+<a name="l00581"></a>00581 
+<a name="l00582"></a>00582 <span class="preprocessor">#endif</span>
+<a name="l00583"></a>00583 <span class="preprocessor"></span>
+</pre></div><hr size="1"><address style="text-align: right;"><small>Generado el Fri Jun 6 22:24:43 2008 para Practica MP2 - Juego Tetris por&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.4 </small></address>
+</body>
+</html>

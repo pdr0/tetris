@@ -1,0 +1,157 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>Practica MP2 - Juego Tetris: Fichero Fuente tablero.cpp</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Generado por Doxygen 1.5.4 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>Página&nbsp;principal</span></a></li>
+    <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+  </ul>
+</div>
+<h1>tablero.cpp</h1><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#include &lt;iostream&gt;</span>
+<a name="l00002"></a>00002 <span class="preprocessor">#include "<a class="code" href="tablero_8h.html" title="Fichero cabecera para la gestión simplificada del tablero.">tablero.h</a>"</span>
+<a name="l00003"></a>00003 
+<a name="l00004"></a>00004 <span class="keyword">using namespace </span>std;
+<a name="l00005"></a>00005 
+<a name="l00006"></a>00006 
+<a name="l00007"></a>00007 tablero::tablero(){
+<a name="l00008"></a>00008 
+<a name="l00009"></a>00009 }
+<a name="l00010"></a>00010 tablero::tablero(<span class="keywordtype">int</span> f, <span class="keywordtype">int</span> c){
+<a name="l00011"></a>00011         matriz m(f,c);
+<a name="l00012"></a>00012         this-&gt;m=m;
+<a name="l00013"></a>00013 }
+<a name="l00014"></a>00014 
+<a name="l00015"></a>00015 tablero::~tablero(){
+<a name="l00016"></a>00016 
+<a name="l00017"></a>00017 }
+<a name="l00018"></a>00018 
+<a name="l00019"></a>00019 tablero::tablero (<span class="keyword">const</span> tablero &amp;t){
+<a name="l00020"></a>00020         <span class="keywordflow">if</span>(<span class="keyword">this</span>!=&amp;t){
+<a name="l00021"></a>00021                 this-&gt;m=t.m;
+<a name="l00022"></a>00022         }
+<a name="l00023"></a>00023 }
+<a name="l00024"></a>00024 
+<a name="l00025"></a>00025 tablero&amp; tablero::operator=(<span class="keyword">const</span> tablero &amp;t){
+<a name="l00026"></a>00026         <span class="keywordflow">if</span>(<span class="keyword">this</span>!=&amp;t){
+<a name="l00027"></a>00027                 this-&gt;m=t.m;
+<a name="l00028"></a>00028         }
+<a name="l00029"></a>00029         <span class="keywordflow">return</span> *<span class="keyword">this</span>;
+<a name="l00030"></a>00030 }
+<a name="l00031"></a>00031 
+<a name="l00032"></a>00032 
+<a name="l00033"></a>00033 
+<a name="l00034"></a>00034 <span class="keywordtype">int</span> tablero::FilTablero()<span class="keyword">const</span>{
+<a name="l00035"></a>00035         <span class="keywordflow">return</span> this-&gt;m.FilasMatriz();
+<a name="l00036"></a>00036 }
+<a name="l00037"></a>00037 
+<a name="l00038"></a>00038 <span class="keywordtype">int</span> tablero::ColTablero()<span class="keyword">const</span>{
+<a name="l00039"></a>00039         <span class="keywordflow">return</span> this-&gt;m.ColumnasMatriz();
+<a name="l00040"></a>00040 }
+<a name="l00041"></a>00041 
+<a name="l00042"></a>00042 <span class="keywordtype">void</span> tablero::SetTablero(<span class="keywordtype">int</span> posi, <span class="keywordtype">int</span> posj, <span class="keyword">const</span> pieza &amp;p){
+<a name="l00043"></a>00043         <span class="keywordtype">int</span> k=posi-1,z;
+<a name="l00044"></a>00044         <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;p.FilPieza(); i++){
+<a name="l00045"></a>00045                 k++;
+<a name="l00046"></a>00046                 z=posj-1;
+<a name="l00047"></a>00047                 <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j=0; j&lt;p.ColPieza(); j++){
+<a name="l00048"></a>00048                         z++;
+<a name="l00049"></a>00049                         <span class="keywordflow">if</span> (p.Get(i,j)!=0)
+<a name="l00050"></a>00050                                 this-&gt;m.SetMatriz(k,z,p.Get(i,j));
+<a name="l00051"></a>00051                 }
+<a name="l00052"></a>00052         }       
+<a name="l00053"></a>00053 }
+<a name="l00054"></a>00054 
+<a name="l00055"></a>00055 <span class="keywordtype">int</span> tablero::GetTablero(<span class="keywordtype">int</span> posi, <span class="keywordtype">int</span> posj)<span class="keyword">const</span>{
+<a name="l00056"></a>00056         <span class="keywordflow">if</span> (posi&lt;=this-&gt;FilTablero() &amp;&amp; posj&lt;=this-&gt;ColTablero())
+<a name="l00057"></a>00057                 <span class="keywordflow">return</span> this-&gt;m.GetMatriz(posi,posj);
+<a name="l00058"></a>00058         <span class="keywordflow">else</span>
+<a name="l00059"></a>00059                 <span class="keywordflow">return</span> -1;
+<a name="l00060"></a>00060 }
+<a name="l00061"></a>00061 
+<a name="l00062"></a>00062 <span class="keywordtype">bool</span> tablero::Encaja(<span class="keywordtype">int</span> posi, <span class="keywordtype">int</span> posj,<span class="keyword">const</span> pieza &amp;p)<span class="keyword">const</span>{
+<a name="l00063"></a>00063         <span class="keywordtype">int</span> k=posi-1,z=posj-1;
+<a name="l00064"></a>00064         <span class="keywordtype">bool</span> encaja = <span class="keyword">true</span>;
+<a name="l00065"></a>00065         <span class="keywordflow">if</span> (posi+p.FilPieza()-1&lt;this-&gt;FilTablero() &amp;&amp; posj&lt;this-&gt;ColTablero()){
+<a name="l00066"></a>00066                 <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;p.FilPieza() &amp;&amp; encaja; i++){
+<a name="l00067"></a>00067                         k++;
+<a name="l00068"></a>00068                         <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j=0; j&lt;p.ColPieza() &amp;&amp; encaja; j++){
+<a name="l00069"></a>00069                                 z++;
+<a name="l00070"></a>00070                                 <span class="keywordflow">if</span> (this-&gt;m.GetMatriz(k,z)!=0&amp;&amp;p.Get(i,j)!=0)
+<a name="l00071"></a>00071                                         encaja = <span class="keyword">false</span>;
+<a name="l00072"></a>00072                         }
+<a name="l00073"></a>00073                         z=posj-1;
+<a name="l00074"></a>00074                 }
+<a name="l00075"></a>00075         }
+<a name="l00076"></a>00076         <span class="keywordflow">return</span> encaja;
+<a name="l00077"></a>00077 }
+<a name="l00078"></a>00078 <span class="keywordtype">int</span> tablero::LineaCompleta(){
+<a name="l00079"></a>00079         <span class="keywordtype">int</span> cnt=0;
+<a name="l00080"></a>00080         <span class="keywordtype">bool</span> ok = <span class="keyword">false</span>;
+<a name="l00081"></a>00081         <span class="keywordtype">int</span> completa=0;
+<a name="l00082"></a>00082         <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;this-&gt;FilTablero(); i++){
+<a name="l00083"></a>00083                 cnt=0;
+<a name="l00084"></a>00084                 <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j=0; j&lt;this-&gt;ColTablero()&amp;&amp;!ok; j++){
+<a name="l00085"></a>00085                         <span class="keywordflow">if</span> (this-&gt;m.GetMatriz(i,j)!=0)
+<a name="l00086"></a>00086                                 cnt++;
+<a name="l00087"></a>00087                         <span class="keywordflow">if</span> (cnt==this-&gt;ColTablero()){
+<a name="l00088"></a>00088                                 completa = i;
+<a name="l00089"></a>00089                                 ok = <span class="keyword">true</span>;
+<a name="l00090"></a>00090                         }
+<a name="l00091"></a>00091                         <span class="keywordflow">else</span>
+<a name="l00092"></a>00092                                 completa = -1;
+<a name="l00093"></a>00093                 }
+<a name="l00094"></a>00094         }
+<a name="l00095"></a>00095         <span class="keywordflow">return</span> completa;
+<a name="l00096"></a>00096 }
+<a name="l00097"></a>00097 <span class="keywordtype">int</span> tablero::BorrarLinea(){
+<a name="l00098"></a>00098         <span class="keywordtype">int</span> fila=0;
+<a name="l00099"></a>00099         <span class="keywordtype">int</span> lineas=0;
+<a name="l00100"></a>00100         <span class="keywordtype">bool</span> fin=<span class="keyword">false</span>;
+<a name="l00101"></a>00101         <span class="keywordflow">while</span> (!fin){
+<a name="l00102"></a>00102                 fila=this-&gt;LineaCompleta();
+<a name="l00103"></a>00103                 <span class="keywordflow">if</span> (fila==-1)
+<a name="l00104"></a>00104                         fin = <span class="keyword">true</span>;
+<a name="l00105"></a>00105                 <span class="keywordflow">else</span> 
+<a name="l00106"></a>00106                         lineas++;
+<a name="l00107"></a>00107                 <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=fila; i&gt;0; i--){
+<a name="l00108"></a>00108                         <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j=0; j&lt;this-&gt;ColTablero(); j++){
+<a name="l00109"></a>00109                                 this-&gt;m.SetMatriz(i,j,this-&gt;m.GetMatriz(i-1,j));
+<a name="l00110"></a>00110                                 <span class="comment">//Inicializa la primera línea del tablero a 0</span>
+<a name="l00111"></a>00111                                 <span class="keywordflow">if</span> (i==1)
+<a name="l00112"></a>00112                                         this-&gt;m.SetMatriz(0,j,0);
+<a name="l00113"></a>00113                         }
+<a name="l00114"></a>00114                 }               
+<a name="l00115"></a>00115         }
+<a name="l00116"></a>00116         <span class="keywordflow">return</span> lineas;
+<a name="l00117"></a>00117 }
+<a name="l00118"></a>00118 
+<a name="l00119"></a>00119 <span class="keywordtype">void</span> tablero::EscribirTablero()<span class="keyword">const</span>{
+<a name="l00120"></a>00120         <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;this-&gt;FilTablero(); i++){
+<a name="l00121"></a>00121                 cout &lt;&lt; endl;
+<a name="l00122"></a>00122                 <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j=0; j&lt;this-&gt;ColTablero(); j++)
+<a name="l00123"></a>00123                         cout &lt;&lt; this-&gt;GetTablero(i,j)&lt;&lt; <span class="stringliteral">" "</span>;
+<a name="l00124"></a>00124         }
+<a name="l00125"></a>00125 }
+<a name="l00126"></a>00126 
+<a name="l00127"></a>00127 <span class="keywordtype">void</span> tablero::LeerTablero(){
+<a name="l00128"></a>00128         <span class="keywordtype">int</span> dato;
+<a name="l00129"></a>00129         <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;this-&gt;FilTablero(); i++){
+<a name="l00130"></a>00130                 <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j=0; j&lt;this-&gt;ColTablero(); j++){
+<a name="l00131"></a>00131                         cin &gt;&gt; dato;
+<a name="l00132"></a>00132                         this-&gt;m.SetMatriz(i,j,dato);
+<a name="l00133"></a>00133                 }
+<a name="l00134"></a>00134         }
+<a name="l00135"></a>00135 }
+<a name="l00136"></a>00136 
+<a name="l00137"></a>00137 <span class="keywordtype">void</span> tablero::Set(<span class="keywordtype">int</span> posi, <span class="keywordtype">int</span> posj, <span class="keywordtype">int</span> v){
+<a name="l00138"></a>00138         this-&gt;m.SetMatriz(posi, posj,v);
+<a name="l00139"></a>00139 }
+</pre></div><hr size="1"><address style="text-align: right;"><small>Generado el Fri Jun 6 22:51:44 2008 para Practica MP2 - Juego Tetris por&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.4 </small></address>
+</body>
+</html>

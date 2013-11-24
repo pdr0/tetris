@@ -1,0 +1,105 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>Practica MP2 - Juego Tetris: Fichero Fuente marcador.h</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Generado por Doxygen 1.5.4 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>Página&nbsp;principal</span></a></li>
+    <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+  </ul>
+</div>
+<h1>marcador.h</h1><a href="marcador_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 
+<a name="l00009"></a>00009 <span class="comment">/* ***************************************** */</span>
+<a name="l00010"></a>00010  
+<a name="l00011"></a>00011 <span class="preprocessor">#ifndef __MARCADOR__H__</span>
+<a name="l00012"></a>00012 <span class="preprocessor"></span><span class="preprocessor">#define __MARCADOR__H__</span>
+<a name="l00013"></a>00013 <span class="preprocessor"></span>
+<a name="l00014"></a>00014 <span class="comment">/* ***************************************** */</span>
+<a name="l00015"></a>00015 
+<a name="l00016"></a>00016 <span class="preprocessor">#include &lt;string&gt;</span>
+<a name="l00017"></a>00017 <span class="keyword">using namespace </span>std;
+<a name="l00018"></a>00018 
+<a name="l00019"></a>00019 <span class="keyword">class </span>marcador{
+<a name="l00020"></a>00020 <span class="keyword">public</span>:
+<a name="l00021"></a>00021 
+<a name="l00025"></a>00025 marcador();
+<a name="l00026"></a>00026 
+<a name="l00031"></a>00031 marcador(<span class="keyword">const</span> marcador &amp;m);
+<a name="l00032"></a>00032 
+<a name="l00036"></a>00036 ~marcador();
+<a name="l00037"></a>00037 
+<a name="l00054"></a>00054 marcador(<span class="keywordtype">int</span> fil, <span class="keywordtype">int</span> col, <span class="keywordtype">int</span> ancho, <span class="keywordtype">int</span> alto, <span class="keywordtype">int</span> marco,<span class="keywordtype">int</span> R,<span class="keywordtype">int</span> G,<span class="keywordtype">int</span> B,<span class="keywordtype">int</span> R1, <span class="keywordtype">int</span> G1, <span class="keywordtype">int</span> B1);
+<a name="l00055"></a>00055         marcador&amp; operator=(<span class="keyword">const</span> marcador &amp;m);
+<a name="l00056"></a>00056         
+<a name="l00061"></a>00061 <span class="keywordtype">void</span> SetFil(<span class="keywordtype">int</span> f);
+<a name="l00062"></a>00062 
+<a name="l00067"></a>00067 <span class="keywordtype">int</span> GetFil()<span class="keyword">const</span>;
+<a name="l00068"></a>00068 
+<a name="l00073"></a>00073 <span class="keywordtype">void</span> SetCol(<span class="keywordtype">int</span> c);
+<a name="l00074"></a>00074 
+<a name="l00079"></a>00079 <span class="keywordtype">int</span> GetCol()<span class="keyword">const</span>;
+<a name="l00080"></a>00080 
+<a name="l00085"></a>00085 <span class="keywordtype">void</span> SetAncho(<span class="keywordtype">int</span> a);
+<a name="l00086"></a>00086 
+<a name="l00091"></a>00091 <span class="keywordtype">int</span> GetAncho()<span class="keyword">const</span>;
+<a name="l00092"></a>00092 
+<a name="l00097"></a>00097 <span class="keywordtype">void</span> SetAlto(<span class="keywordtype">int</span> a);
+<a name="l00098"></a>00098 
+<a name="l00103"></a>00103 <span class="keywordtype">int</span> GetAlto()<span class="keyword">const</span>;
+<a name="l00104"></a>00104 
+<a name="l00109"></a>00109 <span class="keywordtype">void</span> SetMarco(<span class="keywordtype">int</span> m);
+<a name="l00110"></a>00110 
+<a name="l00115"></a>00115 <span class="keywordtype">int</span> GetMarco()<span class="keyword">const</span>;
+<a name="l00116"></a>00116 
+<a name="l00121"></a>00121 <span class="keywordtype">void</span> SetR(<span class="keywordtype">int</span> r);
+<a name="l00122"></a>00122 
+<a name="l00127"></a>00127 <span class="keywordtype">int</span> GetR()<span class="keyword">const</span>;
+<a name="l00128"></a>00128 
+<a name="l00133"></a>00133 <span class="keywordtype">void</span> SetG(<span class="keywordtype">int</span> g);
+<a name="l00134"></a>00134 
+<a name="l00139"></a>00139 <span class="keywordtype">int</span> GetG()<span class="keyword">const</span>;
+<a name="l00140"></a>00140 
+<a name="l00145"></a>00145 <span class="keywordtype">void</span> SetB(<span class="keywordtype">int</span> b);
+<a name="l00146"></a>00146 
+<a name="l00151"></a>00151 <span class="keywordtype">int</span> GetB()<span class="keyword">const</span>;
+<a name="l00152"></a>00152 
+<a name="l00157"></a>00157 <span class="keywordtype">void</span> SetR1(<span class="keywordtype">int</span> r1);
+<a name="l00158"></a>00158 
+<a name="l00163"></a>00163 <span class="keywordtype">int</span> GetR1()<span class="keyword">const</span>;
+<a name="l00164"></a>00164 
+<a name="l00169"></a>00169 <span class="keywordtype">void</span> SetG1(<span class="keywordtype">int</span> g1);
+<a name="l00170"></a>00170 
+<a name="l00175"></a>00175 <span class="keywordtype">int</span> GetG1()<span class="keyword">const</span>;
+<a name="l00176"></a>00176 
+<a name="l00181"></a>00181 <span class="keywordtype">void</span> SetB1(<span class="keywordtype">int</span> g1);
+<a name="l00182"></a>00182 
+<a name="l00187"></a>00187 <span class="keywordtype">int</span> GetB1()<span class="keyword">const</span>;       
+<a name="l00188"></a>00188 
+<a name="l00192"></a>00192 <span class="keywordtype">void</span> LeerMarcador();
+<a name="l00193"></a>00193 
+<a name="l00197"></a>00197 <span class="keywordtype">void</span> EscribirMarcador()<span class="keyword">const</span>;
+<a name="l00198"></a>00198 
+<a name="l00203"></a>00203 <span class="keywordtype">void</span> PintarMarcador()<span class="keyword">const</span>;
+<a name="l00204"></a>00204 
+<a name="l00205"></a>00205 <span class="keyword">private</span>:
+<a name="l00206"></a>00206         <span class="keywordtype">int</span> fil;
+<a name="l00207"></a>00207         <span class="keywordtype">int</span> col;
+<a name="l00208"></a>00208         <span class="keywordtype">int</span> ancho;
+<a name="l00209"></a>00209         <span class="keywordtype">int</span> alto;
+<a name="l00210"></a>00210         <span class="keywordtype">int</span> marco;
+<a name="l00211"></a>00211         <span class="keywordtype">int</span> R;
+<a name="l00212"></a>00212         <span class="keywordtype">int</span> G;
+<a name="l00213"></a>00213         <span class="keywordtype">int</span> B;
+<a name="l00214"></a>00214         <span class="keywordtype">int</span> R1;
+<a name="l00215"></a>00215         <span class="keywordtype">int</span> G1;
+<a name="l00216"></a>00216         <span class="keywordtype">int</span> B1;
+<a name="l00217"></a>00217 };
+<a name="l00218"></a>00218 <span class="preprocessor">#endif</span>
+</pre></div><hr size="1"><address style="text-align: right;"><small>Generado el Fri Jun 6 22:51:44 2008 para Practica MP2 - Juego Tetris por&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.4 </small></address>
+</body>
+</html>

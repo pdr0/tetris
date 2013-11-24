@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>Practica MP2 - Juego Tetris: Fichero Fuente cola_piezas.h</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Generado por Doxygen 1.5.4 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>Página&nbsp;principal</span></a></li>
+    <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+  </ul>
+</div>
+<h1>cola_piezas.h</h1><a href="cola__piezas_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 
+<a name="l00009"></a>00009 <span class="comment">/* ***************************************** */</span>
+<a name="l00010"></a>00010 <span class="preprocessor">#ifndef COLA__PIEZAS__H__</span>
+<a name="l00011"></a>00011 <span class="preprocessor"></span><span class="preprocessor">#define COLA__PIEZAS__H__</span>
+<a name="l00012"></a>00012 <span class="preprocessor"></span><span class="comment">/* ***************************************** */</span>
+<a name="l00013"></a>00013 
+<a name="l00014"></a>00014 <span class="preprocessor">#include "<a class="code" href="vpieza_8h.html" title="Fichero cabecera para la gestión simplificada de un vector de piezas.">vpieza.h</a>"</span>
+<a name="l00015"></a>00015 
+<a name="l00016"></a>00016 <span class="keyword">class </span>cola_piezas{
+<a name="l00017"></a>00017  <span class="keyword">public</span>:
+<a name="l00018"></a>00018  
+<a name="l00022"></a>00022 cola_piezas();
+<a name="l00023"></a>00023 
+<a name="l00029"></a>00029 cola_piezas(<span class="keywordtype">int</span> n);
+<a name="l00030"></a>00030 
+<a name="l00036"></a>00036 cola_piezas(<span class="keyword">const</span> cola_piezas &amp;c);
+<a name="l00037"></a>00037 
+<a name="l00043"></a>00043 cola_piezas&amp; operator=(<span class="keyword">const</span> cola_piezas &amp;c);
+<a name="l00044"></a>00044 
+<a name="l00049"></a>00049 pieza Pop();
+<a name="l00050"></a>00050 
+<a name="l00054"></a>00054 <span class="keywordtype">void</span> Push(<span class="keyword">const</span> pieza p);
+<a name="l00055"></a>00055 
+<a name="l00060"></a>00060 <span class="keywordtype">void</span> Escribir()<span class="keyword">const</span>;
+<a name="l00061"></a>00061 
+<a name="l00066"></a>00066 <span class="keywordtype">int</span> Tam()<span class="keyword">const</span>;
+<a name="l00067"></a>00067 
+<a name="l00072"></a>00072 <span class="keywordtype">void</span> PushTop(<span class="keyword">const</span> pieza p);
+<a name="l00073"></a>00073 
+<a name="l00074"></a>00074 pieza Get(<span class="keywordtype">int</span> x)<span class="keyword">const</span>;
+<a name="l00075"></a>00075 
+<a name="l00076"></a>00076  <span class="keyword">private</span>:
+<a name="l00077"></a>00077         vpieza v;
+<a name="l00078"></a>00078         <span class="keywordtype">int</span> n;
+<a name="l00079"></a>00079 };
+<a name="l00080"></a>00080 <span class="preprocessor"> #endif</span>
+</pre></div><hr size="1"><address style="text-align: right;"><small>Generado el Fri Jun 6 22:51:44 2008 para Practica MP2 - Juego Tetris por&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.4 </small></address>
+</body>
+</html>

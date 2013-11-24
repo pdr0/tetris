@@ -1,0 +1,2040 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>Practica MP2 - Juego Tetris: Referencia del Namespace graficos</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Generado por Doxygen 1.5.4 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>Página&nbsp;principal</span></a></li>
+    <li class="current"><a href="namespaces.html"><span>Namespaces</span></a></li>
+    <li><a href="files.html"><span>Archivos</span></a></li>
+  </ul>
+</div>
+<div class="tabs">
+  <ul>
+    <li><a href="namespaces.html"><span>Lista de namespace</span></a></li>
+    <li><a href="namespacemembers.html"><span>Miembros&nbsp;del&nbsp;Namespace&nbsp;</span></a></li>
+  </ul>
+</div>
+<h1>Referencia del Namespace graficos</h1>Contiene todos los tipos y funciones para la biblioteca <em><a class="el" href="namespacegraficos.html" title="Contiene todos los tipos y funciones para la biblioteca graficos.">graficos</a></em>.  
+<a href="#_details">Más...</a>
+<p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>Tipos definidos</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">typedef SDL_Surface *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#f6a0a9a254403ffa1cf4f5d3bebe6df8">GRF_Imagen</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Tipo de dato para almacenar imágenes (Bitmaps).  <a href="#f6a0a9a254403ffa1cf4f5d3bebe6df8"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">typedef Uint8&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#f5d27a5d622fed301736f447979a478a">TBotonRaton</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Botones del ratón.  <a href="#f5d27a5d622fed301736f447979a478a"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">typedef SDLKey&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#d2b5767086758eb222f34274090ead25">TTecla</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Teclas.  <a href="#d2b5767086758eb222f34274090ead25"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">typedef TTF_Font *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#1963adaaa9e83367392c7f088b882f62">GRF_Fuente</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Tipo de dato para almacenar tipografías.  <a href="#1963adaaa9e83367392c7f088b882f62"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">typedef int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#d0d4f572e3a5a937fe33dc55f730dc5c">TEstiloFuente</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Estilos de fuentes.  <a href="#d0d4f572e3a5a937fe33dc55f730dc5c"></a><br></td></tr>
+<tr><td colspan="2"><br><h2>Enumeraciones</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#db7116f41c46c27d866b964cc3294d9c">TEventoEntrada</a> { <a class="el" href="namespacegraficos.html#db7116f41c46c27d866b964cc3294d9ce1aa3e4bc7f4219f7addc060575a60cc">GRF_RATON</a> = 1, 
+<a class="el" href="namespacegraficos.html#db7116f41c46c27d866b964cc3294d9cb6b7a29716981dc832adb08bfa5664ec">GRF_TECLADO</a> = 2
+ }</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Tipo de evento recibido.  <a href="namespacegraficos.html#db7116f41c46c27d866b964cc3294d9c">Más...</a><br></td></tr>
+<tr><td colspan="2"><br><h2>Funciones</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#3669f037efe39db9fe6b5f902e5b39d4">CrearVentana</a> (int ancho, int alto, const char *titulo)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Inicializar la biblioteca SDL y crear/abrir una ventana.  <a href="#3669f037efe39db9fe6b5f902e5b39d4"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#7a963b22997d75295d8bcc51898f0138">AltoVentana</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Alto de la ventana.  <a href="#7a963b22997d75295d8bcc51898f0138"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#a611f446416ecb06342a5335d1302846">AnchoVentana</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Ancho de la ventana.  <a href="#a611f446416ecb06342a5335d1302846"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#d93236ca6b22116737fa5f923f8fd66d">LimpiarVentana</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Borra (pone negro) el contenido de la ventana.  <a href="#d93236ca6b22116737fa5f923f8fd66d"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#8ff020ac2397675b81378a37b924e776">ActivarDibujo</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Activa la actualización del dibujo.  <a href="#8ff020ac2397675b81378a37b924e776"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#28d14b096347a914c79dacf3e1d5e12c">DesactivarDibujo</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Desactiva la actualización del dibujo.  <a href="#28d14b096347a914c79dacf3e1d5e12c"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="namespacegraficos.html#f6a0a9a254403ffa1cf4f5d3bebe6df8">GRF_Imagen</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#3a1627b1e1155a38840a6a23147c8452">CrearImagen</a> (int ancho, int alto)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Crea una imagen (bitmap).  <a href="#3a1627b1e1155a38840a6a23147c8452"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="namespacegraficos.html#f6a0a9a254403ffa1cf4f5d3bebe6df8">GRF_Imagen</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#c8c10e46984a7f2beb7dc48f8917b3af">ObtenerCopiaImagen</a> (<a class="el" href="namespacegraficos.html#f6a0a9a254403ffa1cf4f5d3bebe6df8">GRF_Imagen</a> orig)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Crea una copia de una imagen (bitmap).  <a href="#c8c10e46984a7f2beb7dc48f8917b3af"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#417c9518f7a7417210266bd1fc341605">AltoImagen</a> (<a class="el" href="namespacegraficos.html#f6a0a9a254403ffa1cf4f5d3bebe6df8">GRF_Imagen</a> img)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Consulta del alto de la imagen.  <a href="#417c9518f7a7417210266bd1fc341605"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#b4e1981141b6caabaff0e8f599877e9e">AnchoImagen</a> (<a class="el" href="namespacegraficos.html#f6a0a9a254403ffa1cf4f5d3bebe6df8">GRF_Imagen</a> img)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Consulta del ancho de la imagen.  <a href="#b4e1981141b6caabaff0e8f599877e9e"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#d59fedb6676a4b07997ce0868dd8123d">LimpiarImagen</a> (<a class="el" href="namespacegraficos.html#f6a0a9a254403ffa1cf4f5d3bebe6df8">GRF_Imagen</a> img)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Limpia el contenido de una imagen.  <a href="#d59fedb6676a4b07997ce0868dd8123d"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="namespacegraficos.html#f6a0a9a254403ffa1cf4f5d3bebe6df8">GRF_Imagen</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#a2816640dfb360555fba4e88c6eff611">LeerImagen</a> (const char *fich)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Cargar desde un fichero en disco una imagen BMP.  <a href="#a2816640dfb360555fba4e88c6eff611"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#a0e79ede861c0f0f06c0ae47949c0bc1">GrabarImagen</a> (const char *fich, <a class="el" href="namespacegraficos.html#f6a0a9a254403ffa1cf4f5d3bebe6df8">GRF_Imagen</a> img)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Salva una imagen a fichero BMP en disco.  <a href="#a0e79ede861c0f0f06c0ae47949c0bc1"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#4af4f9885d6b7eac3acffedb91c05bf9">LiberarImagen</a> (<a class="el" href="namespacegraficos.html#f6a0a9a254403ffa1cf4f5d3bebe6df8">GRF_Imagen</a> img)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Liberar la memoria ocupada por una imagen BMP.  <a href="#4af4f9885d6b7eac3acffedb91c05bf9"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#2fe9ebb8f4c202fc734a3ef0c625332a">DimensionesImagenFichero</a> (const char *fich, int &amp;ancho, int &amp;alto)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Obtener las dimensiones (filas y columnas) de una imagen que está almacenada en un fichero.  <a href="#2fe9ebb8f4c202fc734a3ef0c625332a"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#4891cefa7fc696f1804c0f842be47006">DibujarImagen</a> (<a class="el" href="namespacegraficos.html#f6a0a9a254403ffa1cf4f5d3bebe6df8">GRF_Imagen</a> img, int x, int y, <a class="el" href="namespacegraficos.html#f6a0a9a254403ffa1cf4f5d3bebe6df8">GRF_Imagen</a> imgdest=0)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Dibuja en la ventana gráfica, a partir de las coordenadas (<em>x</em>, <em>y</em>), la imagen almacenada en <em>img</em>.  <a href="#4891cefa7fc696f1804c0f842be47006"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#eab21e631fba6fbcf7acb421af2e6e27">Punto</a> (int x, int y, unsigned char r, unsigned char g, unsigned char b, <a class="el" href="namespacegraficos.html#f6a0a9a254403ffa1cf4f5d3bebe6df8">GRF_Imagen</a> img=0)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Dibuja un punto de color (<em>r</em>, <em>g</em>, <em>b</em>) en (<em>x</em>, <em>y</em>).  <a href="#eab21e631fba6fbcf7acb421af2e6e27"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#592d0207ff687a259b8f7ea76708a948">Linea</a> (int x1, int y1, int x2, int y2, unsigned char r, unsigned char g, unsigned char b, <a class="el" href="namespacegraficos.html#f6a0a9a254403ffa1cf4f5d3bebe6df8">GRF_Imagen</a> img=0)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Dibuja una línea desde (<em>x1</em>,<em>y1</em>) a (<em>x2</em>,<em>y2</em>) de color (<em>r</em>, <em>g</em>, <em>b</em>).  <a href="#592d0207ff687a259b8f7ea76708a948"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#1749f151a5f47f36f345f3666e899ff6">Circulo</a> (int x, int y, int rad, unsigned char r, unsigned char g, unsigned char b, <a class="el" href="namespacegraficos.html#f6a0a9a254403ffa1cf4f5d3bebe6df8">GRF_Imagen</a> img=0)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Dibuja una circunferencia centrada en (<em>x</em>,<em>y</em>) con radio <em>rad</em> de color (<em>r</em>, <em>g</em>, <em>b</em>).  <a href="#1749f151a5f47f36f345f3666e899ff6"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#79c8f7495eb7aed9c2efe6a34c0984b9">Rectangulo</a> (int x1, int y1, int x2, int y2, unsigned char r, unsigned char g, unsigned char b, <a class="el" href="namespacegraficos.html#f6a0a9a254403ffa1cf4f5d3bebe6df8">GRF_Imagen</a> img=0)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Dibuja un rectángulo definido por las esquinas (<em>x1</em>,<em>y1</em>) a (<em>x2</em>,<em>y2</em>) de color (<em>r</em>, <em>g</em>, <em>b</em>).  <a href="#79c8f7495eb7aed9c2efe6a34c0984b9"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#11481486f73321ddc80eae26410f1f0d">Elipse</a> (int x, int y, int radx, int rady, unsigned char r, unsigned char g, unsigned char b, <a class="el" href="namespacegraficos.html#f6a0a9a254403ffa1cf4f5d3bebe6df8">GRF_Imagen</a> img=0)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Dibuja una elipse centrada en (<em>x</em>,<em>y</em>) con radios <em>radx</em> y <em>rady</em> de color (<em>r</em>, <em>g</em>, <em>b</em>).  <a href="#11481486f73321ddc80eae26410f1f0d"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#e4c20d5aa0fe192fd84338f88c17cdd3">RectanguloR</a> (int x1, int y1, int x2, int y2, unsigned char r, unsigned char g, unsigned char b, <a class="el" href="namespacegraficos.html#f6a0a9a254403ffa1cf4f5d3bebe6df8">GRF_Imagen</a> img=0)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Dibuja un rectángulo relleno.  <a href="#e4c20d5aa0fe192fd84338f88c17cdd3"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#6e937d4f03f010ec9ede8199f072ba81">CirculoR</a> (int x, int y, int rad, unsigned char r, unsigned char g, unsigned char b, <a class="el" href="namespacegraficos.html#f6a0a9a254403ffa1cf4f5d3bebe6df8">GRF_Imagen</a> img=0)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Dibuja un círculo relleno.  <a href="#6e937d4f03f010ec9ede8199f072ba81"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#87ca448f1e03e4395f29b25993186f3f">ElipseR</a> (int x, int y, int radx, int rady, unsigned char r, unsigned char g, unsigned char b, <a class="el" href="namespacegraficos.html#f6a0a9a254403ffa1cf4f5d3bebe6df8">GRF_Imagen</a> img=0)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Dibuja una elipse rellena.  <a href="#87ca448f1e03e4395f29b25993186f3f"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#28924d1feab2dcaa2a7e6bf7d2be9fee">Texto</a> (int x, int y, const char *c, unsigned char r, unsigned char g, unsigned char b, <a class="el" href="namespacegraficos.html#f6a0a9a254403ffa1cf4f5d3bebe6df8">GRF_Imagen</a> img=0)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Escribe un texto en la ventana.  <a href="#28924d1feab2dcaa2a7e6bf7d2be9fee"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#11186b075a579b0c1b3e6d20a81df352">ObtenerPunto</a> (int x, int y, unsigned char &amp;r, unsigned char &amp;g, unsigned char &amp;b, <a class="el" href="namespacegraficos.html#f6a0a9a254403ffa1cf4f5d3bebe6df8">GRF_Imagen</a> img=0)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Obtiene el color del pixel de la posición (<em>x</em>, <em>y</em>) en (<em>r</em>, <em>g</em>, <em>b</em>).  <a href="#11186b075a579b0c1b3e6d20a81df352"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="namespacegraficos.html#f5d27a5d622fed301736f447979a478a">TBotonRaton</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#d4b0e011bc9886553abf0302c21a597e">ObtenerClick</a> (int &amp;x, int &amp;y)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Espera hasta que se pulsa uno de los botones del ratón en la ventana.  <a href="#d4b0e011bc9886553abf0302c21a597e"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="namespacegraficos.html#d2b5767086758eb222f34274090ead25">TTecla</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#083deea03b75db5291211ff3ef0a9753">ObtenerTecla</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Espera hasta que se pulsa una tecla.  <a href="#083deea03b75db5291211ff3ef0a9753"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="namespacegraficos.html#db7116f41c46c27d866b964cc3294d9c">TEventoEntrada</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#37aafbbb47acdd6c5afe449df5b76034">ObtenerEntrada</a> (<a class="el" href="namespacegraficos.html#d2b5767086758eb222f34274090ead25">TTecla</a> &amp;pulsa, <a class="el" href="namespacegraficos.html#f5d27a5d622fed301736f447979a478a">TBotonRaton</a> &amp;boton, int &amp;x, int &amp;y)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Espera hasta que se pulsa una tecla o el raton.  <a href="#37aafbbb47acdd6c5afe449df5b76034"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="namespacegraficos.html#d2b5767086758eb222f34274090ead25">TTecla</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#5814c3461925a6c16097ade7f6a5d808">QueTeclaHayPulsada</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Consulta, y si hay una tecla pulsada, devuelve su código.  <a href="#5814c3461925a6c16097ade7f6a5d808"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#c380f2bc297ae9575e43d9db8f541240">Esperar</a> (int ms)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Espera durante un instante de tiempo.  <a href="#c380f2bc297ae9575e43d9db8f541240"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#7520c1b2af66f5a6e346fd2e03484c5c">CronometroInicio</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Pone el cronómetro a cero.  <a href="#7520c1b2af66f5a6e346fd2e03484c5c"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">long int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#51bed3e40cd001282fa868d60b6bc6cc">CronometroValor</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Valor del cronómetro.  <a href="#51bed3e40cd001282fa868d60b6bc6cc"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="namespacegraficos.html#1963adaaa9e83367392c7f088b882f62">GRF_Fuente</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#1ffa48dbe17c0cc18a12bc5a3615c550">CargarFuente</a> (const char *fichero, int tamano, <a class="el" href="namespacegraficos.html#d0d4f572e3a5a937fe33dc55f730dc5c">TEstiloFuente</a> estilo=TTF_STYLE_NORMAL)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Carga una fuente ttf.  <a href="#1ffa48dbe17c0cc18a12bc5a3615c550"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#fd9f40ebaadfd4b4140b9f760b7476c1">LiberarFuente</a> (<a class="el" href="namespacegraficos.html#1963adaaa9e83367392c7f088b882f62">GRF_Fuente</a> fuente)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Libera una fuente previamente cargada.  <a href="#fd9f40ebaadfd4b4140b9f760b7476c1"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#d57eaef769a1c24dd0b8fad145568dba">EscribirTexto</a> (int x, int y, const char *cadena, <a class="el" href="namespacegraficos.html#1963adaaa9e83367392c7f088b882f62">GRF_Fuente</a> fuente, unsigned char r, unsigned char g, unsigned char b, <a class="el" href="namespacegraficos.html#f6a0a9a254403ffa1cf4f5d3bebe6df8">GRF_Imagen</a> imgdest=0)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Escribir texto ttf.  <a href="#d57eaef769a1c24dd0b8fad145568dba"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#da8087d51074520435a5f5b6e0847e61">AltoFuente</a> (<a class="el" href="namespacegraficos.html#1963adaaa9e83367392c7f088b882f62">GRF_Fuente</a> fuente)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Altura de una fuente ttf.  <a href="#da8087d51074520435a5f5b6e0847e61"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#afb08b296aaced9125101ef279a177a6">TamanoTexto</a> (<a class="el" href="namespacegraficos.html#1963adaaa9e83367392c7f088b882f62">GRF_Fuente</a> fuente, const char *mensaje, int &amp;ancho, int &amp;alto)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Calcula el tamaño de un texto.  <a href="#afb08b296aaced9125101ef279a177a6"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>Descripción detallada</h2>
+Contiene todos los tipos y funciones para la biblioteca <em><a class="el" href="namespacegraficos.html" title="Contiene todos los tipos y funciones para la biblioteca graficos.">graficos</a></em>. <hr><h2>Documentación de los tipos definidos</h2>
+<a class="anchor" name="1963adaaa9e83367392c7f088b882f62"></a><!-- doxytag: member="graficos::GRF_Fuente" ref="1963adaaa9e83367392c7f088b882f62" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef TTF_Font* <a class="el" href="namespacegraficos.html#1963adaaa9e83367392c7f088b882f62">graficos::GRF_Fuente</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Tipo de dato para almacenar tipografías. 
+<p>
+Nos permite disponer de distintos tipos de fuentes TTF de manera que el texto dibujado en pantalla pueda tener distintas apariencias. 
+<p>Definición en la línea <a class="el" href="graficos_8h-source.html#l00080">80</a> del archivo <a class="el" href="graficos_8h-source.html">graficos.h</a>.</p>
+
+</div>
+</div><p>
+<a class="anchor" name="f6a0a9a254403ffa1cf4f5d3bebe6df8"></a><!-- doxytag: member="graficos::GRF_Imagen" ref="f6a0a9a254403ffa1cf4f5d3bebe6df8" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef SDL_Surface* <a class="el" href="namespacegraficos.html#f6a0a9a254403ffa1cf4f5d3bebe6df8">graficos::GRF_Imagen</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Tipo de dato para almacenar imágenes (Bitmaps). 
+<p>
+Las imágenes se manejarán con un puntero no nulo. En caso de que el valor sea 0, se asumirá la imagen correspondiente a la ventana. 
+<p>Definición en la línea <a class="el" href="graficos_8h-source.html#l00034">34</a> del archivo <a class="el" href="graficos_8h-source.html">graficos.h</a>.</p>
+
+</div>
+</div><p>
+<a class="anchor" name="f5d27a5d622fed301736f447979a478a"></a><!-- doxytag: member="graficos::TBotonRaton" ref="f5d27a5d622fed301736f447979a478a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef Uint8 <a class="el" href="namespacegraficos.html#f5d27a5d622fed301736f447979a478a">graficos::TBotonRaton</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Botones del ratón. 
+<p>
+Cuando hay que indicar un botón del ratón, usaremos este nuevo tipo, para el que consideraremos los siguientes valores:<p>
+<ol type=1>
+<li>SDL_BUTTON_LEFT: Botón izquierdo.</li><li>SDL_BUTTON_MIDDLE: Botón central.</li><li>SDL_BUTTON_RIGHT: Botón Derecho. </li></ol>
+
+<p>Definición en la línea <a class="el" href="graficos_8h-source.html#l00057">57</a> del archivo <a class="el" href="graficos_8h-source.html">graficos.h</a>.</p>
+
+</div>
+</div><p>
+<a class="anchor" name="d0d4f572e3a5a937fe33dc55f730dc5c"></a><!-- doxytag: member="graficos::TEstiloFuente" ref="d0d4f572e3a5a937fe33dc55f730dc5c" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int <a class="el" href="namespacegraficos.html#d0d4f572e3a5a937fe33dc55f730dc5c">graficos::TEstiloFuente</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Estilos de fuentes. 
+<p>
+Al cargar una fuente le asociamos el estilo con el que deseamos que aparezca. Consideraremos los siguientes valores:<p>
+<ol type=1>
+<li>TTF_STYLE_NORMAL: Estilo normal.</li><li>TTF_STYLE_BOLD: Estilo negrita.</li><li>TTF_STYLE_ITALIC: Estilo itálica. </li></ol>
+
+<p>Definición en la línea <a class="el" href="graficos_8h-source.html#l00093">93</a> del archivo <a class="el" href="graficos_8h-source.html">graficos.h</a>.</p>
+
+</div>
+</div><p>
+<a class="anchor" name="d2b5767086758eb222f34274090ead25"></a><!-- doxytag: member="graficos::TTecla" ref="d2b5767086758eb222f34274090ead25" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef SDLKey <a class="el" href="namespacegraficos.html#d2b5767086758eb222f34274090ead25">graficos::TTecla</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Teclas. 
+<p>
+Cuando hay que indicar una tecla, usaremos este nuevo tipo, para el que consideraremos los valores que puede consultar en la documentación de la SDL, o directamente en la sección refcodigoteclas. Algunos ejemplos son:<p>
+<ol type=1>
+<li>SDLK_q: Tecla q</li><li>SDLK_w: Tecla w</li><li>SDLK_DOWN: Tecla flecha abajo.</li><li>etc... </li></ol>
+
+<p>Definición en la línea <a class="el" href="graficos_8h-source.html#l00071">71</a> del archivo <a class="el" href="graficos_8h-source.html">graficos.h</a>.</p>
+
+</div>
+</div><p>
+<hr><h2>Documentación de las enumeraciones</h2>
+<a class="anchor" name="db7116f41c46c27d866b964cc3294d9c"></a><!-- doxytag: member="graficos::TEventoEntrada" ref="db7116f41c46c27d866b964cc3294d9c" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespacegraficos.html#db7116f41c46c27d866b964cc3294d9c">graficos::TEventoEntrada</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Tipo de evento recibido. 
+<p>
+Al solicitar una entrada sin especificar el dispositivo, estos valores indicarán a cuál de ellos corresponde. <dl compact><dt><b>Valores de la enumeración: </b></dt><dd>
+<table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" name="db7116f41c46c27d866b964cc3294d9ce1aa3e4bc7f4219f7addc060575a60cc"></a><!-- doxytag: member="GRF_RATON" ref="db7116f41c46c27d866b964cc3294d9ce1aa3e4bc7f4219f7addc060575a60cc" args="" -->GRF_RATON</em>&nbsp;</td><td>
+Indica que la entrada corresponde al ratón </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="db7116f41c46c27d866b964cc3294d9cb6b7a29716981dc832adb08bfa5664ec"></a><!-- doxytag: member="GRF_TECLADO" ref="db7116f41c46c27d866b964cc3294d9cb6b7a29716981dc832adb08bfa5664ec" args="" -->GRF_TECLADO</em>&nbsp;</td><td>
+Indica que la entrada corresponde al teclado </td></tr>
+</table>
+</dl>
+
+<p>Definición en la línea <a class="el" href="graficos_8h-source.html#l00042">42</a> del archivo <a class="el" href="graficos_8h-source.html">graficos.h</a>.</p>
+<div class="fragment"><pre class="fragment"><a name="l00042"></a>00042                     {
+<a name="l00043"></a>00043       <a class="code" href="namespacegraficos.html#db7116f41c46c27d866b964cc3294d9ce1aa3e4bc7f4219f7addc060575a60cc">GRF_RATON</a>=1,  
+<a name="l00044"></a>00044       <a class="code" href="namespacegraficos.html#db7116f41c46c27d866b964cc3294d9cb6b7a29716981dc832adb08bfa5664ec">GRF_TECLADO</a>=2 
+<a name="l00045"></a>00045 };
+</pre></div>
+<p>
+
+</div>
+</div><p>
+<hr><h2>Documentación de las funciones</h2>
+<a class="anchor" name="8ff020ac2397675b81378a37b924e776"></a><!-- doxytag: member="graficos::ActivarDibujo" ref="8ff020ac2397675b81378a37b924e776" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void graficos::ActivarDibujo           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Activa la actualización del dibujo. 
+<p>
+<dl class="post" compact><dt><b>Postcondición:</b></dt><dd>Se actualiza el contenido de la ventana. Además, las funciones de dibujo actualizarán el contenido de la ventana inmediatamente después de dibujar. </dd></dl>
+<dl class="see" compact><dt><b>Ver también:</b></dt><dd><a class="el" href="namespacegraficos.html#28d14b096347a914c79dacf3e1d5e12c" title="Desactiva la actualización del dibujo.">DesactivarDibujo</a> <p>
+Sección refactivadesactiva </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="da8087d51074520435a5f5b6e0847e61"></a><!-- doxytag: member="graficos::AltoFuente" ref="da8087d51074520435a5f5b6e0847e61" args="(GRF_Fuente fuente)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int graficos::AltoFuente           </td>
+          <td>(</td>
+          <td class="paramtype">GRF_Fuente&nbsp;</td>
+          <td class="paramname"> <em>fuente</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Altura de una fuente ttf. 
+<p>
+<dl compact><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>fuente</em>&nbsp;</td><td>Fuente a la que calcular la altura máxima </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>Devuelve:</b></dt><dd>La altura máxima posible que puede alcanzar un texto de la fuente </dd></dl>
+<dl class="pre" compact><dt><b>Precondición:</b></dt><dd>La fuente se ha cargado previamente </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="417c9518f7a7417210266bd1fc341605"></a><!-- doxytag: member="graficos::AltoImagen" ref="417c9518f7a7417210266bd1fc341605" args="(GRF_Imagen img)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int graficos::AltoImagen           </td>
+          <td>(</td>
+          <td class="paramtype">GRF_Imagen&nbsp;</td>
+          <td class="paramname"> <em>img</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Consulta del alto de la imagen. 
+<p>
+<dl compact><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>img</em>&nbsp;</td><td>Imagen sobre la que deseamos consultar. </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>Devuelve:</b></dt><dd>Las filas (alto) de la imagen en píxeles </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="7a963b22997d75295d8bcc51898f0138"></a><!-- doxytag: member="graficos::AltoVentana" ref="7a963b22997d75295d8bcc51898f0138" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int graficos::AltoVentana           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Alto de la ventana. 
+<p>
+<dl class="return" compact><dt><b>Devuelve:</b></dt><dd>El alto de la ventana creada, en píxeles. </dd></dl>
+<dl class="pre" compact><dt><b>Precondición:</b></dt><dd>Se debe haber creado una ventana previamente con CrearVentana </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="b4e1981141b6caabaff0e8f599877e9e"></a><!-- doxytag: member="graficos::AnchoImagen" ref="b4e1981141b6caabaff0e8f599877e9e" args="(GRF_Imagen img)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int graficos::AnchoImagen           </td>
+          <td>(</td>
+          <td class="paramtype">GRF_Imagen&nbsp;</td>
+          <td class="paramname"> <em>img</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Consulta del ancho de la imagen. 
+<p>
+<dl compact><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>img</em>&nbsp;</td><td>Imagen sobre la que deseamos consultar. </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>Devuelve:</b></dt><dd>Las columnas (ancho) de la imagen en píxeles </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="a611f446416ecb06342a5335d1302846"></a><!-- doxytag: member="graficos::AnchoVentana" ref="a611f446416ecb06342a5335d1302846" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int graficos::AnchoVentana           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Ancho de la ventana. 
+<p>
+<dl class="return" compact><dt><b>Devuelve:</b></dt><dd>El ancho de la ventana creada, en píxeles. </dd></dl>
+<dl class="pre" compact><dt><b>Precondición:</b></dt><dd>Se debe haber creado una ventana previamente con CrearVentana </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="1ffa48dbe17c0cc18a12bc5a3615c550"></a><!-- doxytag: member="graficos::CargarFuente" ref="1ffa48dbe17c0cc18a12bc5a3615c550" args="(const char *fichero, int tamano, TEstiloFuente estilo=TTF_STYLE_NORMAL)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacegraficos.html#1963adaaa9e83367392c7f088b882f62">GRF_Fuente</a> graficos::CargarFuente           </td>
+          <td>(</td>
+          <td class="paramtype">const char *&nbsp;</td>
+          <td class="paramname"> <em>fichero</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>tamano</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TEstiloFuente&nbsp;</td>
+          <td class="paramname"> <em>estilo</em> = <code>TTF_STYLE_NORMAL</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Carga una fuente ttf. 
+<p>
+<dl compact><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>fichero</em>&nbsp;</td><td>Nombre del archivo que contiene la fuente ttf </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>tamano</em>&nbsp;</td><td>Tamaño que se establece en la fuente cargada </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>estilo</em>&nbsp;</td><td>Estilo que se establece para la fuente cargada </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>Devuelve:</b></dt><dd>La fuente que se ha cargado, 0 en caso de que no haya sido posible. </dd></dl>
+<dl class="see" compact><dt><b>Ver también:</b></dt><dd><a class="el" href="namespacegraficos.html#d0d4f572e3a5a937fe33dc55f730dc5c" title="Estilos de fuentes.">TEstiloFuente</a> </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="1749f151a5f47f36f345f3666e899ff6"></a><!-- doxytag: member="graficos::Circulo" ref="1749f151a5f47f36f345f3666e899ff6" args="(int x, int y, int rad, unsigned char r, unsigned char g, unsigned char b, GRF_Imagen img=0)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void graficos::Circulo           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>rad</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char&nbsp;</td>
+          <td class="paramname"> <em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char&nbsp;</td>
+          <td class="paramname"> <em>g</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char&nbsp;</td>
+          <td class="paramname"> <em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GRF_Imagen&nbsp;</td>
+          <td class="paramname"> <em>img</em> = <code>0</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Dibuja una circunferencia centrada en (<em>x</em>,<em>y</em>) con radio <em>rad</em> de color (<em>r</em>, <em>g</em>, <em>b</em>). 
+<p>
+<dl compact><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>x</em>&nbsp;</td><td>columna del punto centro de la circunferencia </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>y</em>&nbsp;</td><td>fila del punto centro de la circunferencia </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>rad</em>&nbsp;</td><td>radio de la circunferencia </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>r</em>&nbsp;</td><td>componente rojo del color </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>g</em>&nbsp;</td><td>componente verde del color </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>b</em>&nbsp;</td><td>componente azul del color </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>img</em>&nbsp;</td><td>indica la imagen donde pintar. Si vale cero, se asume la ventana. </td></tr>
+  </table>
+</dl>
+<dl class="pre" compact><dt><b>Precondición:</b></dt><dd>img debe indicar un destino válido, ya sea que la ventana se haya creado si vale 0, o que apunte a una imagen creada. <p>
+Los puntos que dibujan la circunferencia están dentro del destino </dd></dl>
+<dl class="see" compact><dt><b>Ver también:</b></dt><dd><a class="el" href="namespacegraficos.html#6e937d4f03f010ec9ede8199f072ba81" title="Dibuja un círculo relleno.">CirculoR</a> </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="6e937d4f03f010ec9ede8199f072ba81"></a><!-- doxytag: member="graficos::CirculoR" ref="6e937d4f03f010ec9ede8199f072ba81" args="(int x, int y, int rad, unsigned char r, unsigned char g, unsigned char b, GRF_Imagen img=0)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void graficos::CirculoR           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>rad</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char&nbsp;</td>
+          <td class="paramname"> <em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char&nbsp;</td>
+          <td class="paramname"> <em>g</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char&nbsp;</td>
+          <td class="paramname"> <em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GRF_Imagen&nbsp;</td>
+          <td class="paramname"> <em>img</em> = <code>0</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Dibuja un círculo relleno. 
+<p>
+<dl compact><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>x</em>&nbsp;</td><td>columna del punto centro de la circunferencia </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>y</em>&nbsp;</td><td>fila del punto centro de la circunferencia </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>rad</em>&nbsp;</td><td>radio de la circunferencia </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>r</em>&nbsp;</td><td>componente rojo del color </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>g</em>&nbsp;</td><td>componente verde del color </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>b</em>&nbsp;</td><td>componente azul del color </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>img</em>&nbsp;</td><td>indica la imagen donde pintar. Si vale cero, se asume la ventana. </td></tr>
+  </table>
+</dl>
+<dl class="pre" compact><dt><b>Precondición:</b></dt><dd>img debe indicar un destino válido, ya sea que la ventana se haya creado si vale 0, o que apunte a una imagen creada. <p>
+Los puntos que dibujan la circunferencia están dentro del destino </dd></dl>
+<dl class="see" compact><dt><b>Ver también:</b></dt><dd><a class="el" href="namespacegraficos.html#1749f151a5f47f36f345f3666e899ff6" title="Dibuja una circunferencia centrada en (x,y) con radio rad de color (r, g, b).">Circulo</a> </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="3a1627b1e1155a38840a6a23147c8452"></a><!-- doxytag: member="graficos::CrearImagen" ref="3a1627b1e1155a38840a6a23147c8452" args="(int ancho, int alto)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacegraficos.html#f6a0a9a254403ffa1cf4f5d3bebe6df8">GRF_Imagen</a> graficos::CrearImagen           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>ancho</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>alto</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Crea una imagen (bitmap). 
+<p>
+<dl compact><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>ancho</em>&nbsp;</td><td>Número de columnas (en píxeles) de la imagen a crear. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>alto</em>&nbsp;</td><td>Número de filas (en píxeles) de la imagen a crear. </td></tr>
+  </table>
+</dl>
+<dl class="pre" compact><dt><b>Precondición:</b></dt><dd><em>ancho</em> y <em>alto</em> deben ser positivos. </dd></dl>
+<dl class="see" compact><dt><b>Ver también:</b></dt><dd><a class="el" href="namespacegraficos.html#4af4f9885d6b7eac3acffedb91c05bf9" title="Liberar la memoria ocupada por una imagen BMP.">LiberarImagen</a> </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="3669f037efe39db9fe6b5f902e5b39d4"></a><!-- doxytag: member="graficos::CrearVentana" ref="3669f037efe39db9fe6b5f902e5b39d4" args="(int ancho, int alto, const char *titulo)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void graficos::CrearVentana           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>ancho</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>alto</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&nbsp;</td>
+          <td class="paramname"> <em>titulo</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Inicializar la biblioteca SDL y crear/abrir una ventana. 
+<p>
+<dl compact><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>ancho</em>&nbsp;</td><td>Número de columnas (en píxeles) de la ventana a crear. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>alto</em>&nbsp;</td><td>Número de filas (en píxeles) de la ventana a crear. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>titulo</em>&nbsp;</td><td>Cadena con el título de la ventana a crear. </td></tr>
+  </table>
+</dl>
+<dl class="pre" compact><dt><b>Precondición:</b></dt><dd><em>ancho</em> y <em>alto</em> deben ser positivos. </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="7520c1b2af66f5a6e346fd2e03484c5c"></a><!-- doxytag: member="graficos::CronometroInicio" ref="7520c1b2af66f5a6e346fd2e03484c5c" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void graficos::CronometroInicio           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Pone el cronómetro a cero. 
+<p>
+<dl class="see" compact><dt><b>Ver también:</b></dt><dd><a class="el" href="namespacegraficos.html#51bed3e40cd001282fa868d60b6bc6cc" title="Valor del cronómetro.">CronometroValor</a> </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="51bed3e40cd001282fa868d60b6bc6cc"></a><!-- doxytag: member="graficos::CronometroValor" ref="51bed3e40cd001282fa868d60b6bc6cc" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long int graficos::CronometroValor           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Valor del cronómetro. 
+<p>
+<dl class="return" compact><dt><b>Devuelve:</b></dt><dd>El valor del cronómetro en milisegundos </dd></dl>
+<dl class="see" compact><dt><b>Ver también:</b></dt><dd><a class="el" href="namespacegraficos.html#7520c1b2af66f5a6e346fd2e03484c5c" title="Pone el cronómetro a cero.">CronometroInicio</a> </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="28d14b096347a914c79dacf3e1d5e12c"></a><!-- doxytag: member="graficos::DesactivarDibujo" ref="28d14b096347a914c79dacf3e1d5e12c" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void graficos::DesactivarDibujo           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Desactiva la actualización del dibujo. 
+<p>
+<dl class="post" compact><dt><b>Postcondición:</b></dt><dd>Las funciones de dibujo no actualizarán el contenido de la ventana mientras que esté desactivado el dibujo. </dd></dl>
+<dl class="see" compact><dt><b>Ver también:</b></dt><dd><a class="el" href="namespacegraficos.html#8ff020ac2397675b81378a37b924e776" title="Activa la actualización del dibujo.">ActivarDibujo</a> <p>
+Sección refactivadesactiva </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="4891cefa7fc696f1804c0f842be47006"></a><!-- doxytag: member="graficos::DibujarImagen" ref="4891cefa7fc696f1804c0f842be47006" args="(GRF_Imagen img, int x, int y, GRF_Imagen imgdest=0)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void graficos::DibujarImagen           </td>
+          <td>(</td>
+          <td class="paramtype">GRF_Imagen&nbsp;</td>
+          <td class="paramname"> <em>img</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GRF_Imagen&nbsp;</td>
+          <td class="paramname"> <em>imgdest</em> = <code>0</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Dibuja en la ventana gráfica, a partir de las coordenadas (<em>x</em>, <em>y</em>), la imagen almacenada en <em>img</em>. 
+<p>
+<dl compact><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>img</em>&nbsp;</td><td>puntero a la imagen que dibujar </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>x</em>&nbsp;</td><td>coordenada horizontal (columna) a partir de la cual pintar la imagen <em>img</em> </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>y</em>&nbsp;</td><td>coordenada vertical (fila) a partir de la cual pintar la imagen <em>img</em> </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>imgdest</em>&nbsp;</td><td>indica la imagen donde pintar. Si vale cero, se asume la ventana. </td></tr>
+  </table>
+</dl>
+<dl class="pre" compact><dt><b>Precondición:</b></dt><dd>imgdest debe indicar un destino válido, ya sea que la ventana se haya creado si vale 0, o que apunte a una imagen creada. <p>
+La imagen debe caber completa en el área delimitada por el destino </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="2fe9ebb8f4c202fc734a3ef0c625332a"></a><!-- doxytag: member="graficos::DimensionesImagenFichero" ref="2fe9ebb8f4c202fc734a3ef0c625332a" args="(const char *fich, int &amp;ancho, int &amp;alto)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool graficos::DimensionesImagenFichero           </td>
+          <td>(</td>
+          <td class="paramtype">const char *&nbsp;</td>
+          <td class="paramname"> <em>fich</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&nbsp;</td>
+          <td class="paramname"> <em>ancho</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&nbsp;</td>
+          <td class="paramname"> <em>alto</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Obtener las dimensiones (filas y columnas) de una imagen que está almacenada en un fichero. 
+<p>
+<dl compact><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>fich</em>&nbsp;</td><td>cadena que contiene el nombre del fichero </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>ancho</em>&nbsp;</td><td>tamaño en columnas de la imagen </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>alto</em>&nbsp;</td><td>tamaño en filas de la imagen </td></tr>
+  </table>
+</dl>
+<dl class="post" compact><dt><b>Postcondición:</b></dt><dd>Si el fichero no se puede leer, las dimensiones serán cero </dd></dl>
+<dl class="return" compact><dt><b>Devuelve:</b></dt><dd>Si ha tenido éxito. </dd></dl>
+<dl class="see" compact><dt><b>Ver también:</b></dt><dd><a class="el" href="namespacegraficos.html#a2816640dfb360555fba4e88c6eff611" title="Cargar desde un fichero en disco una imagen BMP.">LeerImagen</a> </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="11481486f73321ddc80eae26410f1f0d"></a><!-- doxytag: member="graficos::Elipse" ref="11481486f73321ddc80eae26410f1f0d" args="(int x, int y, int radx, int rady, unsigned char r, unsigned char g, unsigned char b, GRF_Imagen img=0)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void graficos::Elipse           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>radx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>rady</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char&nbsp;</td>
+          <td class="paramname"> <em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char&nbsp;</td>
+          <td class="paramname"> <em>g</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char&nbsp;</td>
+          <td class="paramname"> <em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GRF_Imagen&nbsp;</td>
+          <td class="paramname"> <em>img</em> = <code>0</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Dibuja una elipse centrada en (<em>x</em>,<em>y</em>) con radios <em>radx</em> y <em>rady</em> de color (<em>r</em>, <em>g</em>, <em>b</em>). 
+<p>
+<dl compact><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>x</em>&nbsp;</td><td>columna del punto centro de la elipse </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>y</em>&nbsp;</td><td>fila del punto centro de la elipse </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>radx</em>&nbsp;</td><td>radio horizontal de la elipse </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>rady</em>&nbsp;</td><td>radio vertical de la elipse </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>r</em>&nbsp;</td><td>componente rojo del color </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>g</em>&nbsp;</td><td>componente verde del color </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>b</em>&nbsp;</td><td>componente azul del color </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>img</em>&nbsp;</td><td>indica la imagen donde pintar. Si vale cero, se asume la ventana. </td></tr>
+  </table>
+</dl>
+<dl class="pre" compact><dt><b>Precondición:</b></dt><dd>img debe indicar un destino válido, ya sea que la ventana se haya creado si vale 0, o que apunte a una imagen creada. <p>
+Los puntos que dibujan la elipse están dentro del destino </dd></dl>
+<dl class="see" compact><dt><b>Ver también:</b></dt><dd><a class="el" href="namespacegraficos.html#87ca448f1e03e4395f29b25993186f3f" title="Dibuja una elipse rellena.">ElipseR</a> </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="87ca448f1e03e4395f29b25993186f3f"></a><!-- doxytag: member="graficos::ElipseR" ref="87ca448f1e03e4395f29b25993186f3f" args="(int x, int y, int radx, int rady, unsigned char r, unsigned char g, unsigned char b, GRF_Imagen img=0)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void graficos::ElipseR           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>radx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>rady</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char&nbsp;</td>
+          <td class="paramname"> <em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char&nbsp;</td>
+          <td class="paramname"> <em>g</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char&nbsp;</td>
+          <td class="paramname"> <em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GRF_Imagen&nbsp;</td>
+          <td class="paramname"> <em>img</em> = <code>0</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Dibuja una elipse rellena. 
+<p>
+<dl compact><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>x</em>&nbsp;</td><td>columna del punto centro de la elipse </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>y</em>&nbsp;</td><td>fila del punto centro de la elipse </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>radx</em>&nbsp;</td><td>radio horizontal de la elipse </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>rady</em>&nbsp;</td><td>radio vertical de la elipse </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>r</em>&nbsp;</td><td>componente rojo del color </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>g</em>&nbsp;</td><td>componente verde del color </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>b</em>&nbsp;</td><td>componente azul del color </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>img</em>&nbsp;</td><td>indica la imagen donde pintar. Si vale cero, se asume la ventana. </td></tr>
+  </table>
+</dl>
+<dl class="pre" compact><dt><b>Precondición:</b></dt><dd>img debe indicar un destino válido, ya sea que la ventana se haya creado si vale 0, o que apunte a una imagen creada. <p>
+Los puntos que dibujan la elipse están dentro del destino </dd></dl>
+<dl class="see" compact><dt><b>Ver también:</b></dt><dd><a class="el" href="namespacegraficos.html#87ca448f1e03e4395f29b25993186f3f" title="Dibuja una elipse rellena.">ElipseR</a> </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="d57eaef769a1c24dd0b8fad145568dba"></a><!-- doxytag: member="graficos::EscribirTexto" ref="d57eaef769a1c24dd0b8fad145568dba" args="(int x, int y, const char *cadena, GRF_Fuente fuente, unsigned char r, unsigned char g, unsigned char b, GRF_Imagen imgdest=0)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void graficos::EscribirTexto           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&nbsp;</td>
+          <td class="paramname"> <em>cadena</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GRF_Fuente&nbsp;</td>
+          <td class="paramname"> <em>fuente</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char&nbsp;</td>
+          <td class="paramname"> <em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char&nbsp;</td>
+          <td class="paramname"> <em>g</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char&nbsp;</td>
+          <td class="paramname"> <em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GRF_Imagen&nbsp;</td>
+          <td class="paramname"> <em>imgdest</em> = <code>0</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Escribir texto ttf. 
+<p>
+<dl compact><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>x</em>&nbsp;</td><td>columna donde se sitúa la esquina superior izquierda del bloque donde se dibuja el texto </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>y</em>&nbsp;</td><td>fila donde se sitúa la esquina superior izquierda del bloque donde se dibuja el texto </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>cadena</em>&nbsp;</td><td>texto a escribir </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>fuente</em>&nbsp;</td><td>La fuente que se usará para crear el texto </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>r</em>&nbsp;</td><td>componente rojo del color </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>g</em>&nbsp;</td><td>componente verde del color </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>b</em>&nbsp;</td><td>componente azul del color </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>imgdest</em>&nbsp;</td><td>indica la imagen donde pintar. Si vale cero, se asume la ventana. </td></tr>
+  </table>
+</dl>
+<dl class="pre" compact><dt><b>Precondición:</b></dt><dd>img debe indicar un destino válido, ya sea que la ventana se haya creado si vale 0, o que apunte a una imagen creada. <p>
+El texto a dibujar debe estar dentro del destino. </dd></dl>
+<dl class="see" compact><dt><b>Ver también:</b></dt><dd><a class="el" href="namespacegraficos.html#afb08b296aaced9125101ef279a177a6" title="Calcula el tamaño de un texto.">TamanoTexto</a> </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="c380f2bc297ae9575e43d9db8f541240"></a><!-- doxytag: member="graficos::Esperar" ref="c380f2bc297ae9575e43d9db8f541240" args="(int ms)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void graficos::Esperar           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>ms</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Espera durante un instante de tiempo. 
+<p>
+<dl compact><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>ms</em>&nbsp;</td><td>número de milisegundos a esperar </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="a0e79ede861c0f0f06c0ae47949c0bc1"></a><!-- doxytag: member="graficos::GrabarImagen" ref="a0e79ede861c0f0f06c0ae47949c0bc1" args="(const char *fich, GRF_Imagen img)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool graficos::GrabarImagen           </td>
+          <td>(</td>
+          <td class="paramtype">const char *&nbsp;</td>
+          <td class="paramname"> <em>fich</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GRF_Imagen&nbsp;</td>
+          <td class="paramname"> <em>img</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Salva una imagen a fichero BMP en disco. 
+<p>
+<dl compact><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>fich</em>&nbsp;</td><td>nombre del archivo donde salvar la imagen </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>img</em>&nbsp;</td><td>imagen a salvar </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>Devuelve:</b></dt><dd>Si ha tenido éxito. </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="a2816640dfb360555fba4e88c6eff611"></a><!-- doxytag: member="graficos::LeerImagen" ref="a2816640dfb360555fba4e88c6eff611" args="(const char *fich)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacegraficos.html#f6a0a9a254403ffa1cf4f5d3bebe6df8">GRF_Imagen</a> graficos::LeerImagen           </td>
+          <td>(</td>
+          <td class="paramtype">const char *&nbsp;</td>
+          <td class="paramname"> <em>fich</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Cargar desde un fichero en disco una imagen BMP. 
+<p>
+<dl compact><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>fich</em>&nbsp;</td><td>nombre del archivo con la imagen </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>Devuelve:</b></dt><dd>Un puntero a la imagen cargada, 0 si no es posible cargarla. Si ocurre un error, se describe el problema en la salida estándar de error </dd></dl>
+<dl class="post" compact><dt><b>Postcondición:</b></dt><dd>Si se realiza la lectura con éxito, la imagen deberá finalmente ser liberada con LiberarImagen </dd></dl>
+<dl class="see" compact><dt><b>Ver también:</b></dt><dd><a class="el" href="namespacegraficos.html#4af4f9885d6b7eac3acffedb91c05bf9" title="Liberar la memoria ocupada por una imagen BMP.">LiberarImagen</a>, <a class="el" href="namespacegraficos.html#2fe9ebb8f4c202fc734a3ef0c625332a" title="Obtener las dimensiones (filas y columnas) de una imagen que está almacenada en...">DimensionesImagenFichero</a> </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="fd9f40ebaadfd4b4140b9f760b7476c1"></a><!-- doxytag: member="graficos::LiberarFuente" ref="fd9f40ebaadfd4b4140b9f760b7476c1" args="(GRF_Fuente fuente)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void graficos::LiberarFuente           </td>
+          <td>(</td>
+          <td class="paramtype">GRF_Fuente&nbsp;</td>
+          <td class="paramname"> <em>fuente</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Libera una fuente previamente cargada. 
+<p>
+<dl compact><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>fuente</em>&nbsp;</td><td>Puntero que indica la fuente cargada </td></tr>
+  </table>
+</dl>
+<dl class="pre" compact><dt><b>Precondición:</b></dt><dd>La fuente se ha cargado previamente </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="4af4f9885d6b7eac3acffedb91c05bf9"></a><!-- doxytag: member="graficos::LiberarImagen" ref="4af4f9885d6b7eac3acffedb91c05bf9" args="(GRF_Imagen img)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void graficos::LiberarImagen           </td>
+          <td>(</td>
+          <td class="paramtype">GRF_Imagen&nbsp;</td>
+          <td class="paramname"> <em>img</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Liberar la memoria ocupada por una imagen BMP. 
+<p>
+<dl compact><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>img</em>&nbsp;</td><td>puntero a la imagen previamente cargada </td></tr>
+  </table>
+</dl>
+<dl class="pre" compact><dt><b>Precondición:</b></dt><dd>La imagen ha sido previamente creada </dd></dl>
+<dl class="see" compact><dt><b>Ver también:</b></dt><dd><a class="el" href="namespacegraficos.html#3a1627b1e1155a38840a6a23147c8452" title="Crea una imagen (bitmap).">CrearImagen</a>, <a class="el" href="namespacegraficos.html#c8c10e46984a7f2beb7dc48f8917b3af" title="Crea una copia de una imagen (bitmap).">ObtenerCopiaImagen</a>, <a class="el" href="namespacegraficos.html#a2816640dfb360555fba4e88c6eff611" title="Cargar desde un fichero en disco una imagen BMP.">LeerImagen</a> </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="d59fedb6676a4b07997ce0868dd8123d"></a><!-- doxytag: member="graficos::LimpiarImagen" ref="d59fedb6676a4b07997ce0868dd8123d" args="(GRF_Imagen img)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void graficos::LimpiarImagen           </td>
+          <td>(</td>
+          <td class="paramtype">GRF_Imagen&nbsp;</td>
+          <td class="paramname"> <em>img</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Limpia el contenido de una imagen. 
+<p>
+<dl compact><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>img</em>&nbsp;</td><td>Imagen limpiar. Debe haber sido previamente creada. </td></tr>
+  </table>
+</dl>
+<dl class="post" compact><dt><b>Postcondición:</b></dt><dd>El contenido de @ img se modifica para que todos sus puntos tengan el color negro (0,0,0) </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="d93236ca6b22116737fa5f923f8fd66d"></a><!-- doxytag: member="graficos::LimpiarVentana" ref="d93236ca6b22116737fa5f923f8fd66d" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void graficos::LimpiarVentana           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Borra (pone negro) el contenido de la ventana. 
+<p>
+<dl class="pre" compact><dt><b>Precondición:</b></dt><dd>Se debe haber creado una ventana previamente con CrearVentana </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="592d0207ff687a259b8f7ea76708a948"></a><!-- doxytag: member="graficos::Linea" ref="592d0207ff687a259b8f7ea76708a948" args="(int x1, int y1, int x2, int y2, unsigned char r, unsigned char g, unsigned char b, GRF_Imagen img=0)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void graficos::Linea           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>x1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>y1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>x2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>y2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char&nbsp;</td>
+          <td class="paramname"> <em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char&nbsp;</td>
+          <td class="paramname"> <em>g</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char&nbsp;</td>
+          <td class="paramname"> <em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GRF_Imagen&nbsp;</td>
+          <td class="paramname"> <em>img</em> = <code>0</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Dibuja una línea desde (<em>x1</em>,<em>y1</em>) a (<em>x2</em>,<em>y2</em>) de color (<em>r</em>, <em>g</em>, <em>b</em>). 
+<p>
+<dl compact><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>x1</em>&nbsp;</td><td>columna del primer punto </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>y1</em>&nbsp;</td><td>fila del primer punto </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>x2</em>&nbsp;</td><td>columna del segundo punto </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>y2</em>&nbsp;</td><td>fila del segundo punto </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>r</em>&nbsp;</td><td>componente rojo del color </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>g</em>&nbsp;</td><td>componente verde del color </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>b</em>&nbsp;</td><td>componente azul del color </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>img</em>&nbsp;</td><td>indica la imagen donde pintar. Si vale cero, se asume la ventana. </td></tr>
+  </table>
+</dl>
+<dl class="pre" compact><dt><b>Precondición:</b></dt><dd>img debe indicar un destino válido, ya sea que la ventana se haya creado si vale 0, o que apunte a una imagen creada. <p>
+Los puntos (<em>x1</em>,<em>y1</em>) (<em>x2</em>,<em>y2</em>) están dentro del destino </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="d4b0e011bc9886553abf0302c21a597e"></a><!-- doxytag: member="graficos::ObtenerClick" ref="d4b0e011bc9886553abf0302c21a597e" args="(int &amp;x, int &amp;y)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacegraficos.html#f5d27a5d622fed301736f447979a478a">TBotonRaton</a> graficos::ObtenerClick           </td>
+          <td>(</td>
+          <td class="paramtype">int &amp;&nbsp;</td>
+          <td class="paramname"> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&nbsp;</td>
+          <td class="paramname"> <em>y</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Espera hasta que se pulsa uno de los botones del ratón en la ventana. 
+<p>
+<dl compact><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>x</em>&nbsp;</td><td>coordenada horizontal (columna) del ratón en el momento de la pulsación </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>y</em>&nbsp;</td><td>coordenada vertical (fila) del ratón en el momento de la pulsación </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>Devuelve:</b></dt><dd>uel botón pulsado </dd></dl>
+<dl class="post" compact><dt><b>Postcondición:</b></dt><dd>Las coordenadas del ratón en el momento de la pulsación se obtienen en (<em>x</em>, <em>y</em>) </dd></dl>
+<dl class="see" compact><dt><b>Ver también:</b></dt><dd><a class="el" href="namespacegraficos.html#f5d27a5d622fed301736f447979a478a" title="Botones del ratón.">TBotonRaton</a> </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="c8c10e46984a7f2beb7dc48f8917b3af"></a><!-- doxytag: member="graficos::ObtenerCopiaImagen" ref="c8c10e46984a7f2beb7dc48f8917b3af" args="(GRF_Imagen orig)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacegraficos.html#f6a0a9a254403ffa1cf4f5d3bebe6df8">GRF_Imagen</a> graficos::ObtenerCopiaImagen           </td>
+          <td>(</td>
+          <td class="paramtype">GRF_Imagen&nbsp;</td>
+          <td class="paramname"> <em>orig</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Crea una copia de una imagen (bitmap). 
+<p>
+<dl compact><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>orig</em>&nbsp;</td><td>Imagen original que deseamos copiar. </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>Devuelve:</b></dt><dd>Una nueva copia de la imagen orig. </dd></dl>
+<dl class="post" compact><dt><b>Postcondición:</b></dt><dd>La nueva imagen también deberá ser liberada con LiberarImagen </dd></dl>
+<dl class="see" compact><dt><b>Ver también:</b></dt><dd><a class="el" href="namespacegraficos.html#4af4f9885d6b7eac3acffedb91c05bf9" title="Liberar la memoria ocupada por una imagen BMP.">LiberarImagen</a> </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="37aafbbb47acdd6c5afe449df5b76034"></a><!-- doxytag: member="graficos::ObtenerEntrada" ref="37aafbbb47acdd6c5afe449df5b76034" args="(TTecla &amp;pulsa, TBotonRaton &amp;boton, int &amp;x, int &amp;y)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacegraficos.html#db7116f41c46c27d866b964cc3294d9c">TEventoEntrada</a> graficos::ObtenerEntrada           </td>
+          <td>(</td>
+          <td class="paramtype">TTecla &amp;&nbsp;</td>
+          <td class="paramname"> <em>pulsa</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TBotonRaton &amp;&nbsp;</td>
+          <td class="paramname"> <em>boton</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&nbsp;</td>
+          <td class="paramname"> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&nbsp;</td>
+          <td class="paramname"> <em>y</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Espera hasta que se pulsa una tecla o el raton. 
+<p>
+<dl compact><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>pulsa</em>&nbsp;</td><td>código de la tecla que ha sido pulsada (si devuelve GRF_TECLADO) </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>boton</em>&nbsp;</td><td>código del botón que se ha pulsado (si devuelve GRF_RATON) </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>x</em>&nbsp;</td><td>coordenada horizontal (columna) del ratón en el momento de la pulsación (si devuelve GRF_RATON) </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>y</em>&nbsp;</td><td>coordenada vertical (fila) del ratón en el momento de la pulsación (si devuelve GRF_RATON) </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>Devuelve:</b></dt><dd>el tipo de evento que ha producido la entrada (RATON o TECLADO) </dd></dl>
+<dl class="see" compact><dt><b>Ver también:</b></dt><dd><a class="el" href="namespacegraficos.html#f5d27a5d622fed301736f447979a478a" title="Botones del ratón.">TBotonRaton</a>, <a class="el" href="namespacegraficos.html#d2b5767086758eb222f34274090ead25" title="Teclas.">TTecla</a>, <a class="el" href="namespacegraficos.html#db7116f41c46c27d866b964cc3294d9c" title="Tipo de evento recibido.">TEventoEntrada</a> </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="11186b075a579b0c1b3e6d20a81df352"></a><!-- doxytag: member="graficos::ObtenerPunto" ref="11186b075a579b0c1b3e6d20a81df352" args="(int x, int y, unsigned char &amp;r, unsigned char &amp;g, unsigned char &amp;b, GRF_Imagen img=0)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void graficos::ObtenerPunto           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char &amp;&nbsp;</td>
+          <td class="paramname"> <em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char &amp;&nbsp;</td>
+          <td class="paramname"> <em>g</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char &amp;&nbsp;</td>
+          <td class="paramname"> <em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GRF_Imagen&nbsp;</td>
+          <td class="paramname"> <em>img</em> = <code>0</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Obtiene el color del pixel de la posición (<em>x</em>, <em>y</em>) en (<em>r</em>, <em>g</em>, <em>b</em>). 
+<p>
+<dl compact><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>x</em>&nbsp;</td><td>columna del punto </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>y</em>&nbsp;</td><td>fila del punto </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>r</em>&nbsp;</td><td>componente rojo del color </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>g</em>&nbsp;</td><td>componente verde del color </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>b</em>&nbsp;</td><td>componente azul del color </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>img</em>&nbsp;</td><td>indica la imagen que consultar. Si vale cero, se asume la ventana. </td></tr>
+  </table>
+</dl>
+<dl class="pre" compact><dt><b>Precondición:</b></dt><dd>img debe indicar un destino válido, ya sea que la ventana se haya creado si vale 0, o que apunte a una imagen creada. <p>
+0&lt;= <em>x</em> &lt; Columnas del destino &amp;&amp; 0&lt;= <em>y</em> &lt; Filas del destino </dd></dl>
+<dl class="post" compact><dt><b>Postcondición:</b></dt><dd>El color del punto (<em>x</em>,<em>y</em>) de img se obtiene en (<em>r</em>, <em>g</em>, <em>b</em>) </dd></dl>
+<dl class="see" compact><dt><b>Ver también:</b></dt><dd><a class="el" href="namespacegraficos.html#eab21e631fba6fbcf7acb421af2e6e27" title="Dibuja un punto de color (r, g, b) en (x, y).">Punto</a> </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="083deea03b75db5291211ff3ef0a9753"></a><!-- doxytag: member="graficos::ObtenerTecla" ref="083deea03b75db5291211ff3ef0a9753" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacegraficos.html#d2b5767086758eb222f34274090ead25">TTecla</a> graficos::ObtenerTecla           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Espera hasta que se pulsa una tecla. 
+<p>
+<dl class="return" compact><dt><b>Devuelve:</b></dt><dd>un entero que codifica la tecla que se ha pulsado </dd></dl>
+<dl class="see" compact><dt><b>Ver también:</b></dt><dd><a class="el" href="namespacegraficos.html#d2b5767086758eb222f34274090ead25" title="Teclas.">TTecla</a> </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="eab21e631fba6fbcf7acb421af2e6e27"></a><!-- doxytag: member="graficos::Punto" ref="eab21e631fba6fbcf7acb421af2e6e27" args="(int x, int y, unsigned char r, unsigned char g, unsigned char b, GRF_Imagen img=0)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void graficos::Punto           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char&nbsp;</td>
+          <td class="paramname"> <em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char&nbsp;</td>
+          <td class="paramname"> <em>g</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char&nbsp;</td>
+          <td class="paramname"> <em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GRF_Imagen&nbsp;</td>
+          <td class="paramname"> <em>img</em> = <code>0</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Dibuja un punto de color (<em>r</em>, <em>g</em>, <em>b</em>) en (<em>x</em>, <em>y</em>). 
+<p>
+<dl compact><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>x</em>&nbsp;</td><td>columna del punto </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>y</em>&nbsp;</td><td>fila del punto </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>r</em>&nbsp;</td><td>componente rojo del color </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>g</em>&nbsp;</td><td>componente verde del color </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>b</em>&nbsp;</td><td>componente azul del color </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>img</em>&nbsp;</td><td>indica la imagen donde pintar. Si vale cero, se asume la ventana. </td></tr>
+  </table>
+</dl>
+<dl class="pre" compact><dt><b>Precondición:</b></dt><dd>img debe indicar un destino válido, ya sea que la ventana se haya creado si vale 0, o que apunte a una imagen creada. <p>
+0&lt;= <em>x</em> &lt; columnas del destino &amp;&amp; 0&lt;= <em>y</em> &lt; filas del destino </dd></dl>
+<dl class="see" compact><dt><b>Ver también:</b></dt><dd><a class="el" href="namespacegraficos.html#11186b075a579b0c1b3e6d20a81df352" title="Obtiene el color del pixel de la posición (x, y) en (r, g, b).">ObtenerPunto</a> </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="5814c3461925a6c16097ade7f6a5d808"></a><!-- doxytag: member="graficos::QueTeclaHayPulsada" ref="5814c3461925a6c16097ade7f6a5d808" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacegraficos.html#d2b5767086758eb222f34274090ead25">TTecla</a> graficos::QueTeclaHayPulsada           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Consulta, y si hay una tecla pulsada, devuelve su código. 
+<p>
+<dl class="return" compact><dt><b>Devuelve:</b></dt><dd>Un valor que codifica la tecla que se ha pulsado. En caso de que no haya ninguna tecla pulsada, devuelve SDLK_UNKNOWN. </dd></dl>
+<dl class="note" compact><dt><b>Nota:</b></dt><dd>Observe que esta función no detiene la ejecución en espera de que se pulse una tecla. </dd></dl>
+<dl class="see" compact><dt><b>Ver también:</b></dt><dd><a class="el" href="namespacegraficos.html#d2b5767086758eb222f34274090ead25" title="Teclas.">TTecla</a> </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="79c8f7495eb7aed9c2efe6a34c0984b9"></a><!-- doxytag: member="graficos::Rectangulo" ref="79c8f7495eb7aed9c2efe6a34c0984b9" args="(int x1, int y1, int x2, int y2, unsigned char r, unsigned char g, unsigned char b, GRF_Imagen img=0)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void graficos::Rectangulo           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>x1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>y1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>x2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>y2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char&nbsp;</td>
+          <td class="paramname"> <em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char&nbsp;</td>
+          <td class="paramname"> <em>g</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char&nbsp;</td>
+          <td class="paramname"> <em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GRF_Imagen&nbsp;</td>
+          <td class="paramname"> <em>img</em> = <code>0</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Dibuja un rectángulo definido por las esquinas (<em>x1</em>,<em>y1</em>) a (<em>x2</em>,<em>y2</em>) de color (<em>r</em>, <em>g</em>, <em>b</em>). 
+<p>
+<dl compact><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>x1</em>&nbsp;</td><td>columna del primer punto </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>y1</em>&nbsp;</td><td>fila del primer punto </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>x2</em>&nbsp;</td><td>columna del segundo punto </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>y2</em>&nbsp;</td><td>fila del segundo punto </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>r</em>&nbsp;</td><td>componente rojo del color </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>g</em>&nbsp;</td><td>componente verde del color </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>b</em>&nbsp;</td><td>componente azul del color </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>img</em>&nbsp;</td><td>indica la imagen donde pintar. Si vale cero, se asume la ventana. </td></tr>
+  </table>
+</dl>
+<dl class="pre" compact><dt><b>Precondición:</b></dt><dd>img debe indicar un destino válido, ya sea que la ventana se haya creado si vale 0, o que apunte a una imagen creada. <p>
+Los puntos (<em>x1</em>,<em>y1</em>) (<em>x2</em>,<em>y2</em>) están dentro del destino </dd></dl>
+<dl class="see" compact><dt><b>Ver también:</b></dt><dd><a class="el" href="namespacegraficos.html#e4c20d5aa0fe192fd84338f88c17cdd3" title="Dibuja un rectángulo relleno.">RectanguloR</a> </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="e4c20d5aa0fe192fd84338f88c17cdd3"></a><!-- doxytag: member="graficos::RectanguloR" ref="e4c20d5aa0fe192fd84338f88c17cdd3" args="(int x1, int y1, int x2, int y2, unsigned char r, unsigned char g, unsigned char b, GRF_Imagen img=0)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void graficos::RectanguloR           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>x1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>y1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>x2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>y2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char&nbsp;</td>
+          <td class="paramname"> <em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char&nbsp;</td>
+          <td class="paramname"> <em>g</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char&nbsp;</td>
+          <td class="paramname"> <em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GRF_Imagen&nbsp;</td>
+          <td class="paramname"> <em>img</em> = <code>0</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Dibuja un rectángulo relleno. 
+<p>
+<dl compact><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>x1</em>&nbsp;</td><td>columna del primer punto </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>y1</em>&nbsp;</td><td>fila del primer punto </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>x2</em>&nbsp;</td><td>columna del segundo punto </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>y2</em>&nbsp;</td><td>fila del segundo punto </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>r</em>&nbsp;</td><td>componente rojo del color </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>g</em>&nbsp;</td><td>componente verde del color </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>b</em>&nbsp;</td><td>componente azul del color </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>img</em>&nbsp;</td><td>indica la imagen donde pintar. Si vale cero, se asume la ventana. </td></tr>
+  </table>
+</dl>
+<dl class="pre" compact><dt><b>Precondición:</b></dt><dd>img debe indicar un destino válido, ya sea que la ventana se haya creado si vale 0, o que apunte a una imagen creada. <p>
+Los puntos (<em>x1</em>,<em>y1</em>) (<em>x2</em>,<em>y2</em>) están dentro del destino </dd></dl>
+<dl class="see" compact><dt><b>Ver también:</b></dt><dd><a class="el" href="namespacegraficos.html#79c8f7495eb7aed9c2efe6a34c0984b9" title="Dibuja un rectángulo definido por las esquinas (x1,y1) a (x2,y2) de color (r, g...">Rectangulo</a> </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="afb08b296aaced9125101ef279a177a6"></a><!-- doxytag: member="graficos::TamanoTexto" ref="afb08b296aaced9125101ef279a177a6" args="(GRF_Fuente fuente, const char *mensaje, int &amp;ancho, int &amp;alto)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void graficos::TamanoTexto           </td>
+          <td>(</td>
+          <td class="paramtype">GRF_Fuente&nbsp;</td>
+          <td class="paramname"> <em>fuente</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&nbsp;</td>
+          <td class="paramname"> <em>mensaje</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&nbsp;</td>
+          <td class="paramname"> <em>ancho</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&nbsp;</td>
+          <td class="paramname"> <em>alto</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Calcula el tamaño de un texto. 
+<p>
+<dl compact><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>fuente</em>&nbsp;</td><td>La fuente que se usará para crear el texto </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>mensaje</em>&nbsp;</td><td>El texto al que se quiere consultar las dimensiones. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>ancho</em>&nbsp;</td><td>El ancho (columnas) que ocupa el texto </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>alto</em>&nbsp;</td><td>El alto (filas) que ocupa el texto </td></tr>
+  </table>
+</dl>
+<dl class="note" compact><dt><b>Nota:</b></dt><dd>Observe que un texto se dibujará en un rectángulo de tamaño <em>ancho</em> x <em>alto</em> </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="28924d1feab2dcaa2a7e6bf7d2be9fee"></a><!-- doxytag: member="graficos::Texto" ref="28924d1feab2dcaa2a7e6bf7d2be9fee" args="(int x, int y, const char *c, unsigned char r, unsigned char g, unsigned char b, GRF_Imagen img=0)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void graficos::Texto           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&nbsp;</td>
+          <td class="paramname"> <em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char&nbsp;</td>
+          <td class="paramname"> <em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char&nbsp;</td>
+          <td class="paramname"> <em>g</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char&nbsp;</td>
+          <td class="paramname"> <em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GRF_Imagen&nbsp;</td>
+          <td class="paramname"> <em>img</em> = <code>0</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Escribe un texto en la ventana. 
+<p>
+<dl compact><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>x</em>&nbsp;</td><td>columna donde se sitúa la esquina superior izquierda del bloque donde se dibuja el texto </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>y</em>&nbsp;</td><td>fila donde se sitúa la esquina superior izquierda del bloque donde se dibuja el texto </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>c</em>&nbsp;</td><td>texto a escribir </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>r</em>&nbsp;</td><td>componente rojo del color </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>g</em>&nbsp;</td><td>componente verde del color </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>b</em>&nbsp;</td><td>componente azul del color </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>img</em>&nbsp;</td><td>indica la imagen donde pintar. Si vale cero, se asume la ventana. </td></tr>
+  </table>
+</dl>
+<dl class="pre" compact><dt><b>Precondición:</b></dt><dd>img debe indicar un destino válido, ya sea que la ventana se haya creado si vale 0, o que apunte a una imagen creada. <p>
+Los puntos que dibujan el texto están dentro del destino </dd></dl>
+<dl class="post" compact><dt><b>Postcondición:</b></dt><dd>El texto se dibuja en el rectángulo de alto 8 y ancho longitud(c)*8 y con esquina superior izquierda situada en (<em>x</em>,<em>y</em>) </dd></dl>
+
+</div>
+</div><p>
+<hr size="1"><address style="text-align: right;"><small>Generado el Fri Jun 6 22:24:47 2008 para Practica MP2 - Juego Tetris por&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.4 </small></address>
+</body>
+</html>

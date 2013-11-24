@@ -1,0 +1,77 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>Practica MP2 - Juego Tetris: Fichero Fuente cola_piezas.cpp</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Generado por Doxygen 1.5.4 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>Página&nbsp;principal</span></a></li>
+    <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+  </ul>
+</div>
+<h1>cola_piezas.cpp</h1><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#include &lt;iostream&gt;</span>
+<a name="l00002"></a>00002 <span class="preprocessor">#include "<a class="code" href="cola__piezas_8h.html" title="La cola de piezas del programa TETRIS.">cola_piezas.h</a>"</span>
+<a name="l00003"></a>00003 
+<a name="l00004"></a>00004 <span class="keyword">using namespace </span>std;
+<a name="l00005"></a>00005 
+<a name="l00006"></a>00006 cola_piezas::cola_piezas(){
+<a name="l00007"></a>00007         this-&gt;n=0;
+<a name="l00008"></a>00008 }
+<a name="l00009"></a>00009 cola_piezas::cola_piezas(<span class="keywordtype">int</span> n){
+<a name="l00010"></a>00010         vpieza aux(n);
+<a name="l00011"></a>00011         this-&gt;n=n;
+<a name="l00012"></a>00012 }
+<a name="l00013"></a>00013 cola_piezas::cola_piezas(<span class="keyword">const</span> cola_piezas &amp;c){
+<a name="l00014"></a>00014         this-&gt;n=c.Tam();
+<a name="l00015"></a>00015         this-&gt;v=c.v;
+<a name="l00016"></a>00016 }
+<a name="l00017"></a>00017 cola_piezas&amp; cola_piezas::operator=(<span class="keyword">const</span> cola_piezas &amp;c){
+<a name="l00018"></a>00018         <span class="keywordflow">if</span> (<span class="keyword">this</span>!=0){
+<a name="l00019"></a>00019                 this-&gt;n=c.Tam();
+<a name="l00020"></a>00020                 this-&gt;v=c.v;
+<a name="l00021"></a>00021         }
+<a name="l00022"></a>00022         <span class="keywordflow">return</span> *<span class="keyword">this</span>;
+<a name="l00023"></a>00023 }
+<a name="l00024"></a>00024 pieza cola_piezas::Pop(){
+<a name="l00025"></a>00025         pieza p;
+<a name="l00026"></a>00026         <span class="keywordflow">if</span> (this-&gt;Tam()&gt;0){
+<a name="l00027"></a>00027                 p=this-&gt;v.Get(0);
+<a name="l00028"></a>00028                 <span class="keywordflow">if</span> (this-&gt;Tam()==1){
+<a name="l00029"></a>00029                         cola_piezas auxcola;
+<a name="l00030"></a>00030                         *<span class="keyword">this</span>=auxcola;
+<a name="l00031"></a>00031                 }
+<a name="l00032"></a>00032                 <span class="keywordflow">if</span> (this-&gt;Tam() &gt; 1){
+<a name="l00033"></a>00033                         vpieza aux(this-&gt;Tam());
+<a name="l00034"></a>00034                         <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;aux.Tam()-1; i++){
+<a name="l00035"></a>00035                                 aux.Set(i,this-&gt;Get(i+1));
+<a name="l00036"></a>00036                         }       
+<a name="l00037"></a>00037                         this-&gt;v=aux;
+<a name="l00038"></a>00038                         this-&gt;n=aux.Tam();
+<a name="l00039"></a>00039                 }
+<a name="l00040"></a>00040         }
+<a name="l00041"></a>00041         <span class="keywordflow">return</span> p; 
+<a name="l00042"></a>00042 }
+<a name="l00043"></a>00043 <span class="keywordtype">void</span> cola_piezas::Push(<span class="keyword">const</span> pieza p){
+<a name="l00044"></a>00044         this-&gt;v.Push(p);
+<a name="l00045"></a>00045         this-&gt;n=this-&gt;v.Tam();
+<a name="l00046"></a>00046 }
+<a name="l00047"></a>00047 <span class="keywordtype">void</span> cola_piezas::PushTop(<span class="keyword">const</span> pieza p){
+<a name="l00048"></a>00048         this-&gt;v.Set(this-&gt;Tam()-1, p);
+<a name="l00049"></a>00049         this-&gt;n=v.Tam();
+<a name="l00050"></a>00050 }
+<a name="l00051"></a>00051 pieza cola_piezas::Get(<span class="keywordtype">int</span> x)<span class="keyword">const</span>{
+<a name="l00052"></a>00052         <span class="keywordflow">return</span> this-&gt;v.Get(x);
+<a name="l00053"></a>00053 }
+<a name="l00054"></a>00054 <span class="keywordtype">void</span> cola_piezas::Escribir()<span class="keyword">const</span>{
+<a name="l00055"></a>00055         this-&gt;v.Escribir();
+<a name="l00056"></a>00056 }
+<a name="l00057"></a>00057 <span class="keywordtype">int</span> cola_piezas::Tam()<span class="keyword">const</span>{
+<a name="l00058"></a>00058         <span class="keywordflow">return</span> this-&gt;n;
+<a name="l00059"></a>00059 }
+</pre></div><hr size="1"><address style="text-align: right;"><small>Generado el Fri Jun 6 22:51:44 2008 para Practica MP2 - Juego Tetris por&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.4 </small></address>
+</body>
+</html>

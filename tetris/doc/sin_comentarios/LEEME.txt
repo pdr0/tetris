@@ -1,0 +1,24 @@
+En el directorio "sin_comentarios" se han incluido los mismos archivos de configuración
+que cuelgan del directorio "data", pero eliminando los comentarios. El objetivo de
+estos archivos es que el alumno pueda realizar la práctica leyendo directamente los
+parámetros de configuración, es decir, sin necesidad de resolver el problema de 
+ir ignorando las cadenas que corresponden a comentarios.
+
+Observe que si usa estos directorios de configuración, podría realizar una primera
+versión de la práctica que se pudiera ejecutar así:
+
+% bin/tetris < sin_comentarios/conf_clasico_basico.txt
+
+En este caso, la lectura de los parámetros se puede realizar desde "cin", sin abrir
+ni acceder a ningún archivo concreto. Además, considerando que no hay errores, puede
+leer los datos de forma ordenada con los conocimientos básicos que ya tiene sobre E/S.
+
+Finalmente, recuerde que la práctica final debe funcionar correctamente con ambos tipos
+de archivos, incluyendo la posibilidad de que haya comentarios. Por ello, antes de la
+entrega final, debe modificar la práctica para que funcione con la línea:
+
+% bin/tetris data/conf_clasico_basico.txt
+
+ya que la versión sin comentarios no es más que un apoyo para poder desarrollar la
+práctica sin ningún conocimiento adicional sobre ficheros.
+

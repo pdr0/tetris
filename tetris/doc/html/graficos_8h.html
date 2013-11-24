@@ -1,0 +1,174 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>Practica MP2 - Juego Tetris: Referencia del Archivo graficos.h</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Generado por Doxygen 1.5.4 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>Página&nbsp;principal</span></a></li>
+    <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+    <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+  </ul>
+</div>
+<h1>Referencia del Archivo graficos.h</h1>Fichero cabecera para la gestión simplificada de gráficos. <a href="#_details">Más...</a>
+<p>
+<code>#include &lt;SDL/SDL.h&gt;</code><br>
+<code>#include &lt;SDL/SDL_gfxPrimitives.h&gt;</code><br>
+<code>#include &lt;SDL/SDL_ttf.h&gt;</code><br>
+
+<p>
+<a href="graficos_8h-source.html">Ir al código fuente de este archivo.</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>Namespaces</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">namespace &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html">graficos</a></td></tr>
+
+<tr><td colspan="2"><br><h2>Tipos definidos</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">typedef SDL_Surface *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#f6a0a9a254403ffa1cf4f5d3bebe6df8">graficos::GRF_Imagen</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Tipo de dato para almacenar imágenes (Bitmaps).  <a href="#f6a0a9a254403ffa1cf4f5d3bebe6df8"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">typedef Uint8&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#f5d27a5d622fed301736f447979a478a">graficos::TBotonRaton</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Botones del ratón.  <a href="#f5d27a5d622fed301736f447979a478a"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">typedef SDLKey&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#d2b5767086758eb222f34274090ead25">graficos::TTecla</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Teclas.  <a href="#d2b5767086758eb222f34274090ead25"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">typedef TTF_Font *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#1963adaaa9e83367392c7f088b882f62">graficos::GRF_Fuente</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Tipo de dato para almacenar tipografías.  <a href="#1963adaaa9e83367392c7f088b882f62"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">typedef int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#d0d4f572e3a5a937fe33dc55f730dc5c">graficos::TEstiloFuente</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Estilos de fuentes.  <a href="#d0d4f572e3a5a937fe33dc55f730dc5c"></a><br></td></tr>
+<tr><td colspan="2"><br><h2>Enumeraciones</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#db7116f41c46c27d866b964cc3294d9c">graficos::TEventoEntrada</a> { <a class="el" href="namespacegraficos.html#db7116f41c46c27d866b964cc3294d9ce1aa3e4bc7f4219f7addc060575a60cc">graficos::GRF_RATON</a> = 1, 
+<a class="el" href="namespacegraficos.html#db7116f41c46c27d866b964cc3294d9cb6b7a29716981dc832adb08bfa5664ec">graficos::GRF_TECLADO</a> = 2
+ }</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Tipo de evento recibido.  <a href="namespacegraficos.html#db7116f41c46c27d866b964cc3294d9c">Más...</a><br></td></tr>
+<tr><td colspan="2"><br><h2>Funciones</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#3669f037efe39db9fe6b5f902e5b39d4">graficos::CrearVentana</a> (int ancho, int alto, const char *titulo)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Inicializar la biblioteca SDL y crear/abrir una ventana.  <a href="#3669f037efe39db9fe6b5f902e5b39d4"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#7a963b22997d75295d8bcc51898f0138">graficos::AltoVentana</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Alto de la ventana.  <a href="#7a963b22997d75295d8bcc51898f0138"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#a611f446416ecb06342a5335d1302846">graficos::AnchoVentana</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Ancho de la ventana.  <a href="#a611f446416ecb06342a5335d1302846"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#d93236ca6b22116737fa5f923f8fd66d">graficos::LimpiarVentana</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Borra (pone negro) el contenido de la ventana.  <a href="#d93236ca6b22116737fa5f923f8fd66d"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#8ff020ac2397675b81378a37b924e776">graficos::ActivarDibujo</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Activa la actualización del dibujo.  <a href="#8ff020ac2397675b81378a37b924e776"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#28d14b096347a914c79dacf3e1d5e12c">graficos::DesactivarDibujo</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Desactiva la actualización del dibujo.  <a href="#28d14b096347a914c79dacf3e1d5e12c"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">GRF_Imagen&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#3a1627b1e1155a38840a6a23147c8452">graficos::CrearImagen</a> (int ancho, int alto)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Crea una imagen (bitmap).  <a href="#3a1627b1e1155a38840a6a23147c8452"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">GRF_Imagen&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#c8c10e46984a7f2beb7dc48f8917b3af">graficos::ObtenerCopiaImagen</a> (GRF_Imagen orig)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Crea una copia de una imagen (bitmap).  <a href="#c8c10e46984a7f2beb7dc48f8917b3af"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#417c9518f7a7417210266bd1fc341605">graficos::AltoImagen</a> (GRF_Imagen img)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Consulta del alto de la imagen.  <a href="#417c9518f7a7417210266bd1fc341605"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#b4e1981141b6caabaff0e8f599877e9e">graficos::AnchoImagen</a> (GRF_Imagen img)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Consulta del ancho de la imagen.  <a href="#b4e1981141b6caabaff0e8f599877e9e"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#d59fedb6676a4b07997ce0868dd8123d">graficos::LimpiarImagen</a> (GRF_Imagen img)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Limpia el contenido de una imagen.  <a href="#d59fedb6676a4b07997ce0868dd8123d"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">GRF_Imagen&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#a2816640dfb360555fba4e88c6eff611">graficos::LeerImagen</a> (const char *fich)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Cargar desde un fichero en disco una imagen BMP.  <a href="#a2816640dfb360555fba4e88c6eff611"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#a0e79ede861c0f0f06c0ae47949c0bc1">graficos::GrabarImagen</a> (const char *fich, GRF_Imagen img)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Salva una imagen a fichero BMP en disco.  <a href="#a0e79ede861c0f0f06c0ae47949c0bc1"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#4af4f9885d6b7eac3acffedb91c05bf9">graficos::LiberarImagen</a> (GRF_Imagen img)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Liberar la memoria ocupada por una imagen BMP.  <a href="#4af4f9885d6b7eac3acffedb91c05bf9"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#2fe9ebb8f4c202fc734a3ef0c625332a">graficos::DimensionesImagenFichero</a> (const char *fich, int &amp;ancho, int &amp;alto)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Obtener las dimensiones (filas y columnas) de una imagen que está almacenada en un fichero.  <a href="#2fe9ebb8f4c202fc734a3ef0c625332a"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#4891cefa7fc696f1804c0f842be47006">graficos::DibujarImagen</a> (GRF_Imagen img, int x, int y, GRF_Imagen imgdest=0)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Dibuja en la ventana gráfica, a partir de las coordenadas (<em>x</em>, <em>y</em>), la imagen almacenada en <em>img</em>.  <a href="#4891cefa7fc696f1804c0f842be47006"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#eab21e631fba6fbcf7acb421af2e6e27">graficos::Punto</a> (int x, int y, unsigned char r, unsigned char g, unsigned char b, GRF_Imagen img=0)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Dibuja un punto de color (<em>r</em>, <em>g</em>, <em>b</em>) en (<em>x</em>, <em>y</em>).  <a href="#eab21e631fba6fbcf7acb421af2e6e27"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#592d0207ff687a259b8f7ea76708a948">graficos::Linea</a> (int x1, int y1, int x2, int y2, unsigned char r, unsigned char g, unsigned char b, GRF_Imagen img=0)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Dibuja una línea desde (<em>x1</em>,<em>y1</em>) a (<em>x2</em>,<em>y2</em>) de color (<em>r</em>, <em>g</em>, <em>b</em>).  <a href="#592d0207ff687a259b8f7ea76708a948"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#1749f151a5f47f36f345f3666e899ff6">graficos::Circulo</a> (int x, int y, int rad, unsigned char r, unsigned char g, unsigned char b, GRF_Imagen img=0)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Dibuja una circunferencia centrada en (<em>x</em>,<em>y</em>) con radio <em>rad</em> de color (<em>r</em>, <em>g</em>, <em>b</em>).  <a href="#1749f151a5f47f36f345f3666e899ff6"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#79c8f7495eb7aed9c2efe6a34c0984b9">graficos::Rectangulo</a> (int x1, int y1, int x2, int y2, unsigned char r, unsigned char g, unsigned char b, GRF_Imagen img=0)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Dibuja un rectángulo definido por las esquinas (<em>x1</em>,<em>y1</em>) a (<em>x2</em>,<em>y2</em>) de color (<em>r</em>, <em>g</em>, <em>b</em>).  <a href="#79c8f7495eb7aed9c2efe6a34c0984b9"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#11481486f73321ddc80eae26410f1f0d">graficos::Elipse</a> (int x, int y, int radx, int rady, unsigned char r, unsigned char g, unsigned char b, GRF_Imagen img=0)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Dibuja una elipse centrada en (<em>x</em>,<em>y</em>) con radios <em>radx</em> y <em>rady</em> de color (<em>r</em>, <em>g</em>, <em>b</em>).  <a href="#11481486f73321ddc80eae26410f1f0d"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#e4c20d5aa0fe192fd84338f88c17cdd3">graficos::RectanguloR</a> (int x1, int y1, int x2, int y2, unsigned char r, unsigned char g, unsigned char b, GRF_Imagen img=0)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Dibuja un rectángulo relleno.  <a href="#e4c20d5aa0fe192fd84338f88c17cdd3"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#6e937d4f03f010ec9ede8199f072ba81">graficos::CirculoR</a> (int x, int y, int rad, unsigned char r, unsigned char g, unsigned char b, GRF_Imagen img=0)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Dibuja un círculo relleno.  <a href="#6e937d4f03f010ec9ede8199f072ba81"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#87ca448f1e03e4395f29b25993186f3f">graficos::ElipseR</a> (int x, int y, int radx, int rady, unsigned char r, unsigned char g, unsigned char b, GRF_Imagen img=0)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Dibuja una elipse rellena.  <a href="#87ca448f1e03e4395f29b25993186f3f"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#28924d1feab2dcaa2a7e6bf7d2be9fee">graficos::Texto</a> (int x, int y, const char *c, unsigned char r, unsigned char g, unsigned char b, GRF_Imagen img=0)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Escribe un texto en la ventana.  <a href="#28924d1feab2dcaa2a7e6bf7d2be9fee"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#11186b075a579b0c1b3e6d20a81df352">graficos::ObtenerPunto</a> (int x, int y, unsigned char &amp;r, unsigned char &amp;g, unsigned char &amp;b, GRF_Imagen img=0)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Obtiene el color del pixel de la posición (<em>x</em>, <em>y</em>) en (<em>r</em>, <em>g</em>, <em>b</em>).  <a href="#11186b075a579b0c1b3e6d20a81df352"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">TBotonRaton&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#d4b0e011bc9886553abf0302c21a597e">graficos::ObtenerClick</a> (int &amp;x, int &amp;y)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Espera hasta que se pulsa uno de los botones del ratón en la ventana.  <a href="#d4b0e011bc9886553abf0302c21a597e"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">TTecla&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#083deea03b75db5291211ff3ef0a9753">graficos::ObtenerTecla</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Espera hasta que se pulsa una tecla.  <a href="#083deea03b75db5291211ff3ef0a9753"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">TEventoEntrada&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#37aafbbb47acdd6c5afe449df5b76034">graficos::ObtenerEntrada</a> (TTecla &amp;pulsa, TBotonRaton &amp;boton, int &amp;x, int &amp;y)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Espera hasta que se pulsa una tecla o el raton.  <a href="#37aafbbb47acdd6c5afe449df5b76034"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">TTecla&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#5814c3461925a6c16097ade7f6a5d808">graficos::QueTeclaHayPulsada</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Consulta, y si hay una tecla pulsada, devuelve su código.  <a href="#5814c3461925a6c16097ade7f6a5d808"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#c380f2bc297ae9575e43d9db8f541240">graficos::Esperar</a> (int ms)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Espera durante un instante de tiempo.  <a href="#c380f2bc297ae9575e43d9db8f541240"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#7520c1b2af66f5a6e346fd2e03484c5c">graficos::CronometroInicio</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Pone el cronómetro a cero.  <a href="#7520c1b2af66f5a6e346fd2e03484c5c"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">long int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#51bed3e40cd001282fa868d60b6bc6cc">graficos::CronometroValor</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Valor del cronómetro.  <a href="#51bed3e40cd001282fa868d60b6bc6cc"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">GRF_Fuente&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#1ffa48dbe17c0cc18a12bc5a3615c550">graficos::CargarFuente</a> (const char *fichero, int tamano, TEstiloFuente estilo=TTF_STYLE_NORMAL)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Carga una fuente ttf.  <a href="#1ffa48dbe17c0cc18a12bc5a3615c550"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#fd9f40ebaadfd4b4140b9f760b7476c1">graficos::LiberarFuente</a> (GRF_Fuente fuente)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Libera una fuente previamente cargada.  <a href="#fd9f40ebaadfd4b4140b9f760b7476c1"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#d57eaef769a1c24dd0b8fad145568dba">graficos::EscribirTexto</a> (int x, int y, const char *cadena, GRF_Fuente fuente, unsigned char r, unsigned char g, unsigned char b, GRF_Imagen imgdest=0)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Escribir texto ttf.  <a href="#d57eaef769a1c24dd0b8fad145568dba"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#da8087d51074520435a5f5b6e0847e61">graficos::AltoFuente</a> (GRF_Fuente fuente)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Altura de una fuente ttf.  <a href="#da8087d51074520435a5f5b6e0847e61"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraficos.html#afb08b296aaced9125101ef279a177a6">graficos::TamanoTexto</a> (GRF_Fuente fuente, const char *mensaje, int &amp;ancho, int &amp;alto)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Calcula el tamaño de un texto.  <a href="#afb08b296aaced9125101ef279a177a6"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>Descripción detallada</h2>
+Fichero cabecera para la gestión simplificada de gráficos. 
+<p>
+Ofrece una interfaz simple para crear una ventana y dibujar en ella así como el uso básico de E/S y bitmaps 
+<p>Definición en el archivo <a class="el" href="graficos_8h-source.html">graficos.h</a>.</p>
+<hr size="1"><address style="text-align: right;"><small>Generado el Fri Jun 6 22:24:47 2008 para Practica MP2 - Juego Tetris por&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.4 </small></address>
+</body>
+</html>
